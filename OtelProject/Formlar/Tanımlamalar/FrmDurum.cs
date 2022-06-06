@@ -26,5 +26,15 @@ namespace OtelProject.Formlar.Tanımlamalar
             db.TblDurum.Load(); // Load metoduyla bize TblDurumdaki değerleri yükleyecek.
             bindingSource1.DataSource = db.TblDurum.Local; // Binding Source'un veri kaynağı = db.TblDurum.Local (Local komutu ile durum tablosuna verileri göndereceğiz.) (ToList yerine load ve local komutları kullandık. Peki neleri listeleyecek? -Run designer kısmına gönderdiğimiz sütunları [Durum ID ve Durum Adı] listeleyecek.)
         }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
+        {
+            db.SaveChanges(); // Yapılan değişiklikler veri tabanına yansır.
+        }
     }
 }
