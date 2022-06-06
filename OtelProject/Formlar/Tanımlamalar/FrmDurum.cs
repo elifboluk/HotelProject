@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 using OtelProject.Entity; //Entity'i kullandım.
 
 
@@ -34,7 +35,16 @@ namespace OtelProject.Formlar.Tanımlamalar
 
         private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
-            db.SaveChanges(); // Yapılan değişiklikler veri tabanına yansır.
+            try
+            {
+                db.SaveChanges(); // Yapılan değişiklikler veri tabanına yansır.
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Lütfen değerleri kontrol edip yeniden giriş yapın!","Uyarı", MessageBoxButtons.OK,MessageBoxIcon.Warning ); // Message Box'ın ilk parametresi hata mesajıdır, ikinci parametresi başlıktır, üçüncü parametresi butondur, dördüncü parametresi ise ikondur.
+            }
+            
         }
     }
 }
