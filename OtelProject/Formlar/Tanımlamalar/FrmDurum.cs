@@ -46,5 +46,16 @@ namespace OtelProject.Formlar.Tanımlamalar
             }
             
         }
+
+        private void durumuSilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent(); // Üzerinde aktif olarak çalıştığım alanı kaldır.
+            db.SaveChanges(); // Ve değişiklikleri veritabanına kaydet.
+        }
+
+        private void vazgeçToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Üzerinde çalıştığım formu kapat.
+        }
     }
 }
