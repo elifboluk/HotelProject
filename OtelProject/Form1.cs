@@ -45,5 +45,12 @@ namespace OtelProject
             Formlar.Tanımlamalar.FrmGorev fr = new Formlar.Tanımlamalar.FrmGorev(); // fr isimli nesne türetildi. Üstteki fr ile bu fr karışmaz çünkü herbiri kendi scope dediğimiz süslü parantezinin içindedir.
             fr.Show();
         }
+
+        private void BtnKasaTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanımlamalar.FrmKasa fr = new Formlar.Tanımlamalar.FrmKasa(); // fr isimli nesne türetildi. Üstteki fr ile bu fr karışmaz çünkü herbiri kendi scope dediğimiz süslü parantezinin içindedir.
+            fr.Show();
+
+        }
     }
 }
