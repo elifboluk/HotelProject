@@ -59,5 +59,11 @@ namespace OtelProject
             fr.Show();
 
         }
+
+        private void BtnOdaTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanımlamalar.FrmOda fr = new Formlar.Tanımlamalar.FrmOda(); // fr isimli nesne türetildi. Üstteki fr ile bu fr karışmaz çünkü herbiri kendi scope dediğimiz süslü parantezinin içindedir.
+            fr.Show();
+        }
     }
 }
