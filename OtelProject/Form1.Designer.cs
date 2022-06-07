@@ -45,6 +45,7 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.BtnDepartmanTanimlari = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +57,10 @@
             this.ribbonControl1.SearchEditItem,
             this.barButtonItem1,
             this.BtnDurumTanimlari,
-            this.BtnBirimTanimlari});
+            this.BtnBirimTanimlari,
+            this.BtnDepartmanTanimlari});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 4;
+            this.ribbonControl1.MaxItemId = 5;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -166,7 +168,17 @@
             // 
             this.ribbonPageGroup6.ItemLinks.Add(this.BtnDurumTanimlari);
             this.ribbonPageGroup6.ItemLinks.Add(this.BtnBirimTanimlari);
+            this.ribbonPageGroup6.ItemLinks.Add(this.BtnDepartmanTanimlari);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            // 
+            // BtnDepartmanTanimlari
+            // 
+            this.BtnDepartmanTanimlari.Caption = "Departman Tanımları";
+            this.BtnDepartmanTanimlari.Id = 4;
+            this.BtnDepartmanTanimlari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.BtnDepartmanTanimlari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.BtnDepartmanTanimlari.Name = "BtnDepartmanTanimlari";
+            this.BtnDepartmanTanimlari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnDepartmanTanimlari_ItemClick);
             // 
             // Form1
             // 
@@ -204,6 +216,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
         private DevExpress.XtraBars.BarButtonItem BtnDurumTanimlari;
         private DevExpress.XtraBars.BarButtonItem BtnBirimTanimlari;
+        private DevExpress.XtraBars.BarButtonItem BtnDepartmanTanimlari;
     }
 }
 

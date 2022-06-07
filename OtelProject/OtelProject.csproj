@@ -148,6 +148,12 @@
     <Compile Include="Formlar\Tanımlamalar\FrmBirim.Designer.cs">
       <DependentUpon>FrmBirim.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmDepartman.Designer.cs">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Tanımlamalar\FrmDurum.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Tanımlamalar\FrmBirim.resx">
       <DependentUpon>FrmBirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmDepartman.resx">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Tanımlamalar\FrmDurum.resx">
       <DependentUpon>FrmDurum.cs</DependentUpon>
