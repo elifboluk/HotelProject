@@ -147,6 +147,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Personel\FrmPersonelKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Personel\FrmPersonelKarti.Designer.cs">
+      <DependentUpon>FrmPersonelKarti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Tanımlamalar\FrmBirim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Personel\FrmPersonelKarti.resx">
+      <DependentUpon>FrmPersonelKarti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Tanımlamalar\FrmBirim.resx">
       <DependentUpon>FrmBirim.cs</DependentUpon>
