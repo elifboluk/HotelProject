@@ -1,4 +1,6 @@
-﻿using OtelProject.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
+using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,6 +41,26 @@ namespace OtelProject.Formlar.Personel
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
             TxtAciklama.Text = PictureEditKimlikOn.GetLoadedImageLocation();
+        }
+            
+        private void BtnKaydet_Click(object sender, EventArgs e) // Kaydetme işlemi için önce Repository'mizi çağırmalıyız.↓
+            //<TblPersonel> Elmas içerisinde bir T değeri göndermemiz gerekiyor. Buradan bir nesne türetiyoruz (ismi repo olsun)
+        {
+            Repository<TblPersonel> repo = new Repository<TblPersonel>();
+            TblPersonel t = new TblPersonel(); // Personel sınıfından da bir t nesnesi türetiyoruz, ikinci türetmiş olduğumuz nesne; personel tablomuz içerisinde yer alan kaydetmek istediğim sütunlara erişmemi sağlayacak.↓
+            t.AdSoyad = TxtAdSoyad.Text;
+            t.TC = TxtTc.Text;
+            t.Adres = TxtAdres.Text;
+            t.Telefon = TxtTelefon.Text;
+            t.IseGirisTarih = DateTime.Parse(dateEditGiris.Text);
+            t.Departman = int.Parse(lookUpEditDepartman.EditValue.ToString());
+            t.Gorev = int.Parse(lookUpEditGorev.EditValue.ToString());
+            t.Aciklama = TxtAciklama.Text;
+            t.Durum = 1; // 1 aktif anlamına gelir.
+            repo.TAdd(t);
+            XtraMessageBox.Show("Personel başarılı bir şekilde sisteme kaydedildi.");
+
+
         }
     }
 }
