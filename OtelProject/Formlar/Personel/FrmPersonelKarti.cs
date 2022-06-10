@@ -35,5 +35,10 @@ namespace OtelProject.Formlar.Personel
             }).ToList();
 
         }
+
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            TxtAciklama.Text = PictureEditKimlikOn.GetLoadedImageLocation();
+        }
     }
 }
