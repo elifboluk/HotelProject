@@ -53,6 +53,9 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
@@ -61,19 +64,29 @@
             this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.memoEdit2 = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.pictureEdit11 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
+            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
+            this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit15 = new DevExpress.XtraEditors.PictureEdit();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit16 = new DevExpress.XtraEditors.PictureEdit();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
@@ -93,6 +106,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+            this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
@@ -101,17 +116,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
+            this.xtraTabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
+            this.groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
+            this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).BeginInit();
+            this.groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit16.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit1
@@ -356,7 +379,8 @@
             this.xtraTabControl1.TabIndex = 4;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
-            this.xtraTabPage2});
+            this.xtraTabPage2,
+            this.xtraTabPage3});
             // 
             // xtraTabPage1
             // 
@@ -368,6 +392,35 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(468, 243);
             this.xtraTabPage1.Text = "Bilgiler";
             this.xtraTabPage1.Paint += new System.Windows.Forms.PaintEventHandler(this.xtraTabPage1_Paint);
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.simpleButton2);
+            this.groupControl2.Controls.Add(this.simpleButton1);
+            this.groupControl2.Location = new System.Drawing.Point(3, 199);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.ShowCaption = false;
+            this.groupControl2.Size = new System.Drawing.Size(470, 41);
+            this.groupControl2.TabIndex = 7;
+            this.groupControl2.Text = "groupControl2";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(353, 5);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(103, 30);
+            this.simpleButton2.TabIndex = 1;
+            this.simpleButton2.Text = "Kaydet";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(244, 5);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(103, 30);
+            this.simpleButton1.TabIndex = 0;
+            this.simpleButton1.Text = "Vazgeç";
             // 
             // groupControl4
             // 
@@ -452,15 +505,12 @@
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "groupControl3";
             // 
-            // xtraTabPage2
+            // memoEdit1
             // 
-            this.xtraTabPage2.Controls.Add(this.pictureEdit12);
-            this.xtraTabPage2.Controls.Add(this.pictureEdit11);
-            this.xtraTabPage2.Controls.Add(this.groupControl6);
-            this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(468, 243);
-            this.xtraTabPage2.Text = "Dokümanlar";
+            this.memoEdit1.Location = new System.Drawing.Point(90, 5);
+            this.memoEdit1.Name = "memoEdit1";
+            this.memoEdit1.Size = new System.Drawing.Size(353, 112);
+            this.memoEdit1.TabIndex = 4;
             // 
             // labelControl10
             // 
@@ -483,12 +533,33 @@
             this.pictureEdit10.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit10.TabIndex = 2;
             // 
-            // memoEdit1
+            // xtraTabPage2
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(90, 5);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(353, 112);
-            this.memoEdit1.TabIndex = 4;
+            this.xtraTabPage2.Controls.Add(this.pictureEdit12);
+            this.xtraTabPage2.Controls.Add(this.pictureEdit11);
+            this.xtraTabPage2.Controls.Add(this.groupControl6);
+            this.xtraTabPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage2.ImageOptions.Image")));
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(468, 243);
+            this.xtraTabPage2.Text = "Dokümanlar";
+            // 
+            // pictureEdit12
+            // 
+            this.pictureEdit12.Location = new System.Drawing.Point(243, 134);
+            this.pictureEdit12.Name = "pictureEdit12";
+            this.pictureEdit12.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit12.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit12.Size = new System.Drawing.Size(222, 96);
+            this.pictureEdit12.TabIndex = 4;
+            // 
+            // pictureEdit11
+            // 
+            this.pictureEdit11.Location = new System.Drawing.Point(3, 134);
+            this.pictureEdit11.Name = "pictureEdit11";
+            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit11.Size = new System.Drawing.Size(222, 96);
+            this.pictureEdit11.TabIndex = 3;
             // 
             // groupControl6
             // 
@@ -516,7 +587,6 @@
             this.labelControl13.Size = new System.Drawing.Size(41, 13);
             this.labelControl13.TabIndex = 3;
             this.labelControl13.Text = "Açıklama";
-            //this.labelControl13.Click += new System.EventHandler(this.labelControl13_Click);
             // 
             // pictureEdit13
             // 
@@ -531,52 +601,158 @@
             this.pictureEdit13.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit13.TabIndex = 2;
             // 
-            // groupControl2
+            // xtraTabPage3
             // 
-            this.groupControl2.Controls.Add(this.simpleButton2);
-            this.groupControl2.Controls.Add(this.simpleButton1);
-            this.groupControl2.Location = new System.Drawing.Point(3, 199);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.ShowCaption = false;
-            this.groupControl2.Size = new System.Drawing.Size(470, 41);
-            this.groupControl2.TabIndex = 7;
-            this.groupControl2.Text = "groupControl2";
+            this.xtraTabPage3.Controls.Add(this.groupControl8);
+            this.xtraTabPage3.Controls.Add(this.groupControl7);
+            this.xtraTabPage3.Controls.Add(this.groupControl5);
+            this.xtraTabPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("xtraTabPage3.ImageOptions.Image")));
+            this.xtraTabPage3.Name = "xtraTabPage3";
+            this.xtraTabPage3.Size = new System.Drawing.Size(468, 243);
+            this.xtraTabPage3.Text = "Ayarlar";
             // 
-            // simpleButton2
+            // groupControl5
             // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(353, 5);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(103, 30);
-            this.simpleButton2.TabIndex = 1;
-            this.simpleButton2.Text = "Kaydet";
+            this.groupControl5.Controls.Add(this.labelControl11);
+            this.groupControl5.Controls.Add(this.pictureEdit14);
+            this.groupControl5.Controls.Add(this.radioButton1);
+            this.groupControl5.Location = new System.Drawing.Point(14, 3);
+            this.groupControl5.Name = "groupControl5";
+            this.groupControl5.ShowCaption = false;
+            this.groupControl5.Size = new System.Drawing.Size(441, 88);
+            this.groupControl5.TabIndex = 8;
+            this.groupControl5.Text = "groupControl5";
             // 
-            // simpleButton1
+            // labelControl11
             // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(244, 5);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(103, 30);
-            this.simpleButton1.TabIndex = 0;
-            this.simpleButton1.Text = "Vazgeç";
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(6, 31);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(386, 48);
+            this.labelControl11.TabIndex = 13;
+            this.labelControl11.Text = "Bu yetki verildiği zaman sistem içerisinde bulunan yeni ürün girişi,\r\nyeni tanıml" +
+    "ama işlemleri, mevcut tanımlamalarda düzenlemeler gibi \r\ndurumların değiştirilme" +
+    "si ve yönetilmesi sağlanır.";
+            this.labelControl11.Click += new System.EventHandler(this.labelControl11_Click);
             // 
-            // pictureEdit11
+            // pictureEdit14
             // 
-            this.pictureEdit11.Location = new System.Drawing.Point(3, 134);
-            this.pictureEdit11.Name = "pictureEdit11";
-            this.pictureEdit11.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit11.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit11.Size = new System.Drawing.Size(222, 96);
-            this.pictureEdit11.TabIndex = 3;
+            this.pictureEdit14.EditValue = ((object)(resources.GetObject("pictureEdit14.EditValue")));
+            this.pictureEdit14.Location = new System.Drawing.Point(5, 5);
+            this.pictureEdit14.Name = "pictureEdit14";
+            this.pictureEdit14.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit14.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit14.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit14.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit14.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit14.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit14.TabIndex = 9;
             // 
-            // pictureEdit12
+            // radioButton1
             // 
-            this.pictureEdit12.Location = new System.Drawing.Point(243, 134);
-            this.pictureEdit12.Name = "pictureEdit12";
-            this.pictureEdit12.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit12.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit12.Size = new System.Drawing.Size(222, 96);
-            this.pictureEdit12.TabIndex = 4;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(31, 8);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(57, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Yetki 1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // groupControl7
+            // 
+            this.groupControl7.Controls.Add(this.labelControl12);
+            this.groupControl7.Controls.Add(this.pictureEdit15);
+            this.groupControl7.Controls.Add(this.radioButton2);
+            this.groupControl7.Location = new System.Drawing.Point(14, 97);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.ShowCaption = false;
+            this.groupControl7.Size = new System.Drawing.Size(441, 68);
+            this.groupControl7.TabIndex = 9;
+            this.groupControl7.Text = "groupControl7";
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(6, 31);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(417, 32);
+            this.labelControl12.TabIndex = 13;
+            this.labelControl12.Text = "Bu yetki verildiği zaman sistem içerisinde yalnızca rezervasyon kayıtlarına\r\nait " +
+    "yönetimler gerçekleştirilir.";
+            this.labelControl12.Click += new System.EventHandler(this.labelControl12_Click);
+            // 
+            // pictureEdit15
+            // 
+            this.pictureEdit15.EditValue = ((object)(resources.GetObject("pictureEdit15.EditValue")));
+            this.pictureEdit15.Location = new System.Drawing.Point(5, 5);
+            this.pictureEdit15.Name = "pictureEdit15";
+            this.pictureEdit15.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit15.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit15.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit15.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit15.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit15.TabIndex = 9;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(31, 8);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(57, 17);
+            this.radioButton2.TabIndex = 0;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Yetki 2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // groupControl8
+            // 
+            this.groupControl8.Controls.Add(this.labelControl14);
+            this.groupControl8.Controls.Add(this.pictureEdit16);
+            this.groupControl8.Controls.Add(this.radioButton3);
+            this.groupControl8.Location = new System.Drawing.Point(14, 172);
+            this.groupControl8.Name = "groupControl8";
+            this.groupControl8.ShowCaption = false;
+            this.groupControl8.Size = new System.Drawing.Size(441, 68);
+            this.groupControl8.TabIndex = 10;
+            this.groupControl8.Text = "groupControl8";
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Location = new System.Drawing.Point(6, 31);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(378, 16);
+            this.labelControl14.TabIndex = 13;
+            this.labelControl14.Text = "Bu yetki verildiği zaman sisteme ait bütün alanlara erişim sağlanır.";
+            // 
+            // pictureEdit16
+            // 
+            this.pictureEdit16.EditValue = ((object)(resources.GetObject("pictureEdit16.EditValue")));
+            this.pictureEdit16.Location = new System.Drawing.Point(5, 5);
+            this.pictureEdit16.Name = "pictureEdit16";
+            this.pictureEdit16.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit16.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit16.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit16.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit16.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit16.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit16.TabIndex = 9;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(31, 8);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(57, 17);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Yetki 3";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // FrmPersonelKarti
             // 
@@ -610,6 +786,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+            this.groupControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
@@ -620,18 +798,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            this.xtraTabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.memoEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
+            this.xtraTabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
+            this.groupControl5.ResumeLayout(false);
+            this.groupControl5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit14.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
+            this.groupControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit15.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl8)).EndInit();
+            this.groupControl8.ResumeLayout(false);
+            this.groupControl8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit16.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -683,5 +872,18 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit12;
         private DevExpress.XtraEditors.PictureEdit pictureEdit11;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
+        private DevExpress.XtraEditors.GroupControl groupControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit14;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit15;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private DevExpress.XtraEditors.GroupControl groupControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit16;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }

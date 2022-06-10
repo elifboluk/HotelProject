@@ -37,6 +37,14 @@ namespace OtelProject.Formlar.Personel
 
         }
 
-       
+        private void labelControl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
