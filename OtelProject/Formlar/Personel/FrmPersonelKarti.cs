@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,34 +17,22 @@ namespace OtelProject.Formlar.Personel
         {
             InitializeComponent();
         }
+        DbOtelEntities db = new DbOtelEntities();
 
-        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
+      
+        private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
+            lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman select new
+            {
+                x.DepartmanID,
+                x.DepartmanAd
+            }).ToList();
 
-        }
-
-        private void groupControl1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void labelControl7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xtraTabPage1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void labelControl11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl12_Click(object sender, EventArgs e)
-        {
+            lookUpEditGorev.Properties.DataSource = (from x in db.TblGorev select new
+            {
+                x.GorevID,
+                x.GorevAd
+            }).ToList();
 
         }
     }
