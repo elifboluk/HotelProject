@@ -56,6 +56,10 @@ namespace OtelProject.Formlar.Personel
             t.Departman = int.Parse(lookUpEditDepartman.EditValue.ToString());
             t.Gorev = int.Parse(lookUpEditGorev.EditValue.ToString());
             t.Aciklama = TxtAciklama.Text;
+            t.Mail = TxtMail.Text;
+            t.KimlikOn = PictureEditKimlikOn.GetLoadedImageLocation();
+            t.KimlikArka = PictureEditKimlikArka.GetLoadedImageLocation();
+            //t.Sifre = TxtSifre.Text;
             t.Durum = 1; // 1 aktif anlamına gelir.
             repo.TAdd(t);
             XtraMessageBox.Show("Personel başarılı bir şekilde sisteme kaydedildi.");
