@@ -21,9 +21,11 @@ namespace OtelProject.Formlar.Personel
         }
         DbOtelEntities db = new DbOtelEntities();
 
-      
+        public string id; // Erişim sağlamak için public olarak tanımladık.
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
+            this.Text = id; // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
+
             lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman select new
             {
                 x.DepartmanID,
