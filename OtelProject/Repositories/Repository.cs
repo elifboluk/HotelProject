@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,6 +37,12 @@ namespace OtelProject.Repositories
         public void TUpdate() // Güncelleme işlemi için.
         {
             db.SaveChanges();
+        }
+
+        // Silme ve güncelleme işleminden önce silinecek ve güncellenecek olan satırın bilgilerini T Find metodu aracılığıyla tutturacağız.
+        public T Find(Expression<Func<T, bool>> where) // Expression, Linq sytax'ına ait bir komuttur.Fonksiyon olarak alınacak bir çıkış değeri belirlenir, çıkış değerimiz; T. T'den sonra çıkış değerinin türü belirlenir, türümüz; bool. Sonrasında ise bir parametre ismi yazılır, parametremiz; where. Where yerine istediğimiz parametreyi yazabiliriz fakat genellikle where kullanılır. 
+        {
+            return db.Set<T>().FirstOrDefault(where); // Find metodunu gönderdiğimizde bize geri sadece bir tane değer gönderecek, bu değer where'den gelen değer olacak. (Burada göndermiş olduğumuz where parametresi ise ID olacak.) Kısacası; bize, geriye T entity'sine bağlı olarak where şartında göndermiş olduğumuz değerin sadece FirstOrDefault'ta bir değerini gönderecek. Yani sadece ID göndereceğiz ve o ID'ye ait kayıtlar tutulacak gibi. Burada bir şartlı listeleme söz konusu değildir.
         }
     }
 }
