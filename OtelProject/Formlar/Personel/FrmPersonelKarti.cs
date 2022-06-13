@@ -26,6 +26,21 @@ namespace OtelProject.Formlar.Personel
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
             this.Text = id.ToString(); // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
+            if (id != 0)
+            {
+                var personel = repo.Find(x => x.PersonelID == id);
+                TxtAdSoyad.Text = personel.AdSoyad;
+                TxtTc.Text = personel.TC;
+                TxtAdres.Text = personel.Adres;
+                TxtTelefon.Text = personel.Telefon;
+                TxtMail.Text = personel.Mail;
+                dateEditGiris.Text = personel.IseGirisTarih.ToString();
+                dateEditCikis.Text = personel.IstenCikisTarih.ToString();
+                TxtAciklama.Text = personel.Aciklama;
+                TxtSifre.Text = personel.Sifre;
+
+            }
+
 
             lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman
                                                          select new

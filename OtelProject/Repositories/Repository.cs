@@ -17,7 +17,10 @@ namespace OtelProject.Repositories
         {
             return db.Set<T>().ToList(); // Set dışarıdan parametre göndereceğimiz anlamına gelir. Bu yapı sayesinde dışarıdan istediğimiz tabloyu buraya getireceğiz ve GetAll metoduyla bu tablonun içeriğini çağıracağız.
         }
-
+        public List<T> GetListByID(Expression<Func<T, bool>> filter)// List türünde bir ifade kullandığım için geriye bir değer döndürmem gerekir.↓
+        {
+            return db.Set<T>().Where(filter).ToList(); // filter isimli parametreden gelen değere göre listeleme yapılsın.
+        }
         public void TAdd(T p) // T türünde bir p parametresi aldık. Buraya hangi entity'i gönderirsek o entity'e göre işlem gerçekleştirilmesini istiyoruz.
         { 
             db.Set<T>().Add(p);
