@@ -21,22 +21,25 @@ namespace OtelProject.Formlar.Personel
         }
         DbOtelEntities db = new DbOtelEntities();
 
-        public string id; // Erişim sağlamak için public olarak tanımladık.
+        public int id; // Erişim sağlamak için public olarak tanımladık.
+        Repository<TblPersonel> repo = new Repository<TblPersonel>();
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
-            this.Text = id; // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
+            this.Text = id.ToString(); // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
 
-            lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman select new
-            {
-                x.DepartmanID,
-                x.DepartmanAd
-            }).ToList();
+            lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman
+                                                         select new
+                                                         {
+                                                             x.DepartmanID,
+                                                             x.DepartmanAd
+                                                         }).ToList();
 
-            lookUpEditGorev.Properties.DataSource = (from x in db.TblGorev select new
-            {
-                x.GorevID,
-                x.GorevAd
-            }).ToList();
+            lookUpEditGorev.Properties.DataSource = (from x in db.TblGorev
+                                                     select new
+                                                     {
+                                                         x.GorevID,
+                                                         x.GorevAd
+                                                     }).ToList();
 
         }
 
@@ -44,11 +47,11 @@ namespace OtelProject.Formlar.Personel
         {
             TxtAciklama.Text = PictureEditKimlikOn.GetLoadedImageLocation();
         }
-            
+
         private void BtnKaydet_Click(object sender, EventArgs e) // Kaydetme işlemi için önce Repository'mizi çağırmalıyız.↓
-            //<TblPersonel> Elmas içerisinde bir T değeri göndermemiz gerekiyor. Buradan bir nesne türetiyoruz (ismi repo olsun)
+                                                                 //<TblPersonel> Elmas içerisinde bir T değeri göndermemiz gerekiyor. Buradan bir nesne türetiyoruz (ismi repo olsun)
         {
-            Repository<TblPersonel> repo = new Repository<TblPersonel>();
+
             TblPersonel t = new TblPersonel(); // Personel sınıfından da bir t nesnesi türetiyoruz, ikinci türetmiş olduğumuz nesne; personel tablomuz içerisinde yer alan kaydetmek istediğim sütunlara erişmemi sağlayacak.↓
             t.AdSoyad = TxtAdSoyad.Text;
             t.TC = TxtTc.Text;
@@ -66,6 +69,25 @@ namespace OtelProject.Formlar.Personel
             repo.TAdd(t);
             XtraMessageBox.Show("Personel başarılı bir şekilde sisteme kaydedildi.");
 
+
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            var deger = repo.Find(x => x.PersonelID == id); // x öyle ki => repo nesnesinin bağlı bulunduğu T entity'sine göre bu T entity'e ait property'ler gelecek. TblPersonel'de çalıştığımız için TblPersonel'deki verileri getirecek.(PersonelID = dışarıdan gönderdiğimiz id'ye.)
+            deger.AdSoyad = TxtAdSoyad.Text;
+            deger.TC = TxtTc.Text;
+            deger.Adres = TxtAdres.Text;
+            //deger.Telefon = TxtTelefon.Text;
+            //deger.IseGirisTarih = DateTime.Parse(dateEditGiris.Text);
+            //deger.Departman = int.Parse(lookUpEditDepartman.EditValue.ToString());
+            //deger.Gorev = int.Parse(lookUpEditGorev.EditValue.ToString());
+            //deger.Aciklama = TxtAciklama.Text;
+            //deger.Mail = TxtMail.Text;
+            //deger.KimlikOn = PictureEditKimlikOn.GetLoadedImageLocation();
+            //deger.KimlikArka = PictureEditKimlikArka.GetLoadedImageLocation();
+            repo.TUpdate(deger);
+            XtraMessageBox.Show("Personel kartı bilgileri başarıyla güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
         }
     }

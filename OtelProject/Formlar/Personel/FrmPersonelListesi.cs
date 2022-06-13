@@ -39,7 +39,7 @@ namespace OtelProject.Formlar.Personel
         private void gridView1_DoubleClick(object sender, EventArgs e)
         {
             Personel.FrmPersonelKarti fr = new FrmPersonelKarti();
-            fr.id = gridView1.GetFocusedRowCellValue("PersonelID").ToString();// (Odaklanılan satırı al=GetFocusedRow), (Hücrenin değeri=CellValue) Odaklanılan satırdaki hücrenin değerini al. Çift tırnak içerisinde değeri alınacak olan hücreyi yazarız. (ToString=string formatında al)
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("PersonelID").ToString());// (Odaklanılan satırı al=GetFocusedRow), (Hücrenin değeri=CellValue) Odaklanılan satırdaki hücrenin değerini al. Çift tırnak içerisinde değeri alınacak olan hücreyi yazarız. (ToString=string formatında al)
             fr.Show();
         }
     }

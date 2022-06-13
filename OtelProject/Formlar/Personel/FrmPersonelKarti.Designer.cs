@@ -87,6 +87,7 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDepartman.Properties)).BeginInit();
@@ -409,6 +410,7 @@
             // 
             // groupControl2
             // 
+            this.groupControl2.Controls.Add(this.BtnGuncelle);
             this.groupControl2.Controls.Add(this.BtnKaydet);
             this.groupControl2.Controls.Add(this.BtnVazgec);
             this.groupControl2.Location = new System.Drawing.Point(3, 199);
@@ -431,7 +433,7 @@
             // BtnVazgec
             // 
             this.BtnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnVazgec.ImageOptions.Image")));
-            this.BtnVazgec.Location = new System.Drawing.Point(244, 5);
+            this.BtnVazgec.Location = new System.Drawing.Point(5, 6);
             this.BtnVazgec.Name = "BtnVazgec";
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 0;
@@ -770,6 +772,16 @@
             this.radioButton1.Text = "Yetki 1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
+            // BtnGuncelle
+            // 
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(181, 6);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
+            this.BtnGuncelle.TabIndex = 2;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+            // 
             // FrmPersonelKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -904,5 +916,6 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private DevExpress.XtraEditors.DateEdit dateEditGiris;
         private DevExpress.XtraEditors.DateEdit dateEditCikis;
+        private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
     }
 }

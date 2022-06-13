@@ -34,7 +34,7 @@ namespace OtelProject.Repositories
             return db.Set<T>().Find(id); // Dışarıdan gönderdiğim id'ye göre bulma işlemi gerçekleştir.
         }
 
-        public void TUpdate() // Güncelleme işlemi için.
+        public void TUpdate(T p) // Güncelleme işlemi için.
         {
             db.SaveChanges();
         }
