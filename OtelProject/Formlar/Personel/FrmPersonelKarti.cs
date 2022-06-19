@@ -38,6 +38,13 @@ namespace OtelProject.Formlar.Personel
                 dateEditCikis.Text = personel.IstenCikisTarih.ToString();
                 TxtAciklama.Text = personel.Aciklama;
                 TxtSifre.Text = personel.Sifre;
+                PictureEditKimlikOn.Image = Image.FromFile(personel.KimlikOn); // Kimliğin ön kısmındaki fotoğrafı aldık.
+                PictureEditKimlikArka.Image = Image.FromFile(personel.KimlikArka); // Kimliğin arka kısmındaki fotoğrafı aldık.
+                labelControl15.Text = personel.KimlikOn; // Label15'e personel kimlik ön fotoğrafının değerini (bilgilerini) yazdır.
+                labelControl16.Text = personel.KimlikArka; // Label16'ya personel kimlik arka fotoğrafının değerini (bilgilerini) yazdır.
+                lookUpEditDepartman.EditValue = personel.Departman; // Personel kartına departman bilgisi geldi.
+                lookUpEditGorev.EditValue = personel.Gorev; // Personel kartına görev bilgisi geldi.
+
 
             }
 
@@ -60,7 +67,7 @@ namespace OtelProject.Formlar.Personel
 
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
-            TxtAciklama.Text = PictureEditKimlikOn.GetLoadedImageLocation();
+            this.Close(); // Üzerinde çalıştığım formu kapat. 
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e) // Kaydetme işlemi için önce Repository'mizi çağırmalıyız.↓
@@ -79,7 +86,7 @@ namespace OtelProject.Formlar.Personel
             t.Mail = TxtMail.Text;
             t.KimlikOn = PictureEditKimlikOn.GetLoadedImageLocation();
             t.KimlikArka = PictureEditKimlikArka.GetLoadedImageLocation();
-            //t.Sifre = TxtSifre.Text;
+            t.Sifre = TxtSifre.Text;
             t.Durum = 1; // 1 aktif anlamına gelir.
             repo.TAdd(t);
             XtraMessageBox.Show("Personel başarılı bir şekilde sisteme kaydedildi.");
@@ -93,17 +100,28 @@ namespace OtelProject.Formlar.Personel
             deger.AdSoyad = TxtAdSoyad.Text;
             deger.TC = TxtTc.Text;
             deger.Adres = TxtAdres.Text;
-            //deger.Telefon = TxtTelefon.Text;
-            //deger.IseGirisTarih = DateTime.Parse(dateEditGiris.Text);
-            //deger.Departman = int.Parse(lookUpEditDepartman.EditValue.ToString());
-            //deger.Gorev = int.Parse(lookUpEditGorev.EditValue.ToString());
-            //deger.Aciklama = TxtAciklama.Text;
-            //deger.Mail = TxtMail.Text;
-            //deger.KimlikOn = PictureEditKimlikOn.GetLoadedImageLocation();
-            //deger.KimlikArka = PictureEditKimlikArka.GetLoadedImageLocation();
+            deger.Telefon = TxtTelefon.Text;
+            deger.IseGirisTarih = DateTime.Parse(dateEditGiris.Text);
+            deger.Departman = int.Parse(lookUpEditDepartman.EditValue.ToString());
+            deger.Gorev = int.Parse(lookUpEditGorev.EditValue.ToString());
+            deger.Aciklama = TxtAciklama.Text;
+            deger.Mail = TxtMail.Text;
+            deger.Sifre = TxtSifre.Text;
+            deger.KimlikOn = labelControl15.Text;
+            deger.KimlikArka = labelControl16.Text;
             repo.TUpdate(deger);
             XtraMessageBox.Show("Personel kartı bilgileri başarıyla güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
+        }
+
+        private void PictureEditKimlikOn_EditValueChanged(object sender, EventArgs e)
+        {
+            labelControl15.Text = PictureEditKimlikOn.GetLoadedImageLocation().ToString();
+        }
+
+        private void PictureEditKimlikArka_EditValueChanged(object sender, EventArgs e)
+        {
+            labelControl16.Text = PictureEditKimlikArka.GetLoadedImageLocation().ToString();
         }
     }
 }

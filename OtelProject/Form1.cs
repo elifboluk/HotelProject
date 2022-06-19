@@ -29,11 +29,7 @@ namespace OtelProject
             fr.Show();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void BtnDepartmanTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Tanımlamalar.FrmDepartman fr = new Formlar.Tanımlamalar.FrmDepartman(); // fr isimli nesne türetildi. Üstteki fr ile bu fr karışmaz çünkü herbiri kendi scope dediğimiz süslü parantezinin içindedir.
@@ -100,5 +96,7 @@ namespace OtelProject
             fr.Show();
 
         }
+
+      
     }
 }
