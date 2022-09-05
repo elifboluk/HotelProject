@@ -102,5 +102,12 @@ namespace OtelProject
             Formlar.Misafir.FrmMisafirKarti fr = new Formlar.Misafir.FrmMisafirKarti();
             fr.Show();
         }
+
+        private void BtnMisafirListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Misafir.FrmMisafirListesi fr = new Formlar.Misafir.FrmMisafirListesi();
+            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum dedik.
+            fr.Show();
+        }
     }
 }

@@ -44,6 +44,8 @@
             this.BtnUrunGrupTanimlari = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonelListesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnPersonelKarti = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnMisafirListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnMisafirKarti = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -57,9 +59,7 @@
             this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnMisafirKarti = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +83,7 @@
             this.BtnUrunGrupTanimlari,
             this.BtnPersonelListesi,
             this.BtnPersonelKarti,
-            this.barButtonItem2,
+            this.BtnMisafirListesi,
             this.BtnMisafirKarti});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 16;
@@ -213,6 +213,24 @@
             this.BtnPersonelKarti.Name = "BtnPersonelKarti";
             this.BtnPersonelKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelKarti_ItemClick);
             // 
+            // BtnMisafirListesi
+            // 
+            this.BtnMisafirListesi.Caption = "Misafir Listesi";
+            this.BtnMisafirListesi.Id = 14;
+            this.BtnMisafirListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.BtnMisafirListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.BtnMisafirListesi.Name = "BtnMisafirListesi";
+            this.BtnMisafirListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMisafirListesi_ItemClick);
+            // 
+            // BtnMisafirKarti
+            // 
+            this.BtnMisafirKarti.Caption = "Yeni Misafir Kartı";
+            this.BtnMisafirKarti.Id = 15;
+            this.BtnMisafirKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnMisafirKarti.ImageOptions.Image")));
+            this.BtnMisafirKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMisafirKarti.ImageOptions.LargeImage")));
+            this.BtnMisafirKarti.Name = "BtnMisafirKarti";
+            this.BtnMisafirKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMisafirKarti_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -234,7 +252,7 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup2.ItemLinks.Add(this.BtnMisafirListesi);
             this.ribbonPageGroup2.ItemLinks.Add(this.BtnMisafirKarti);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             // 
@@ -300,14 +318,6 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Müşteri Listesi";
-            this.barButtonItem2.Id = 14;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
             // barButtonItem3
             // 
             this.barButtonItem3.Caption = "Müşteri Listesi";
@@ -315,15 +325,6 @@
             this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
             this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
             this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // BtnMisafirKarti
-            // 
-            this.BtnMisafirKarti.Caption = "Yeni Misafir Kartı";
-            this.BtnMisafirKarti.Id = 15;
-            this.BtnMisafirKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.BtnMisafirKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.BtnMisafirKarti.Name = "BtnMisafirKarti";
-            this.BtnMisafirKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMisafirKarti_ItemClick);
             // 
             // Form1
             // 
@@ -373,7 +374,7 @@
         private DevExpress.XtraBars.BarButtonItem BtnPersonelListesi;
         private DevExpress.XtraBars.BarButtonItem BtnPersonelKarti;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem BtnMisafirListesi;
         private DevExpress.XtraBars.BarButtonItem BtnMisafirKarti;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
     }
