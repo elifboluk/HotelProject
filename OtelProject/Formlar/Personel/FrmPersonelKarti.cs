@@ -69,7 +69,7 @@ namespace OtelProject.Formlar.Personel
         {
             this.Close(); // Üzerinde çalıştığım formu kapat. 
         }
-
+       
         private void BtnKaydet_Click(object sender, EventArgs e) // Kaydetme işlemi için önce Repository'mizi çağırmalıyız.↓
                                                                  //<TblPersonel> Elmas içerisinde bir T değeri göndermemiz gerekiyor. Buradan bir nesne türetiyoruz (ismi repo olsun)
         {

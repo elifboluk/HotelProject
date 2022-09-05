@@ -238,6 +238,7 @@
             this.PictureEditKimlikArka.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.PictureEditKimlikArka.Size = new System.Drawing.Size(222, 96);
             this.PictureEditKimlikArka.TabIndex = 4;
+            this.PictureEditKimlikArka.EditValueChanged += new System.EventHandler(this.PictureEditKimlikArka_EditValueChanged);
             // 
             // PictureEditKimlikOn
             // 
@@ -247,6 +248,7 @@
             this.PictureEditKimlikOn.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.PictureEditKimlikOn.Size = new System.Drawing.Size(222, 96);
             this.PictureEditKimlikOn.TabIndex = 3;
+            this.PictureEditKimlikOn.EditValueChanged += new System.EventHandler(this.PictureEditKimlikOn_EditValueChanged);
             // 
             // groupControl6
             // 
@@ -358,6 +360,7 @@
             this.BtnKaydet.Size = new System.Drawing.Size(103, 30);
             this.BtnKaydet.TabIndex = 1;
             this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnVazgec
             // 
@@ -367,6 +370,7 @@
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 0;
             this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // groupControl1
             // 
