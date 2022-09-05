@@ -41,5 +41,18 @@ namespace OtelProject.Formlar.Misafir
         {
 
         }
+
+        private void lookUpEditSehir_EditValueChanged(object sender, EventArgs e)
+        {
+            int secilen;
+            secilen = int.Parse(lookUpEditSehir.EditValue.ToString());
+            lookUpEditilce.Properties.DataSource=(from x in db.ilceler
+                                                  select new
+                                                  {
+                                                     Id= x.id,
+                                                     İlçe=x.ilce, 
+                                                      Şehir = x.sehir
+                                                  } ).Where(y=>y.Şehir==secilen).ToList();
+        }
     }
 }

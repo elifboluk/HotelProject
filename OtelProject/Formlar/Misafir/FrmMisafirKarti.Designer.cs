@@ -419,9 +419,9 @@
             this.lookUpEditilce.Name = "lookUpEditilce";
             this.lookUpEditilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEditilce.Properties.DisplayMember = "GorevAd";
-            this.lookUpEditilce.Properties.NullText = "Görev Seçiniz";
-            this.lookUpEditilce.Properties.ValueMember = "GorevID";
+            this.lookUpEditilce.Properties.DisplayMember = "İlçe";
+            this.lookUpEditilce.Properties.NullText = "İlçe Seçiniz";
+            this.lookUpEditilce.Properties.ValueMember = "Id";
             this.lookUpEditilce.Size = new System.Drawing.Size(110, 20);
             this.lookUpEditilce.TabIndex = 13;
             // 
@@ -457,6 +457,7 @@
             this.lookUpEditSehir.Properties.ValueMember = "Id";
             this.lookUpEditSehir.Size = new System.Drawing.Size(110, 20);
             this.lookUpEditSehir.TabIndex = 10;
+            this.lookUpEditSehir.EditValueChanged += new System.EventHandler(this.lookUpEditSehir_EditValueChanged);
             // 
             // labelControl4
             // 
