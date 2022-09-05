@@ -58,10 +58,10 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEditilce = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
-            this.lookUpEditGorev = new DevExpress.XtraEditors.LookUpEdit();
+            this.lookUpEditSehir = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.lookUpEditUlke = new DevExpress.XtraEditors.LookUpEdit();
@@ -96,9 +96,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditilce.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditGorev.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSehir.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUlke.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -372,10 +372,10 @@
             // 
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.pictureEdit6);
-            this.groupControl1.Controls.Add(this.lookUpEdit1);
+            this.groupControl1.Controls.Add(this.lookUpEditilce);
             this.groupControl1.Controls.Add(this.labelControl5);
             this.groupControl1.Controls.Add(this.pictureEdit5);
-            this.groupControl1.Controls.Add(this.lookUpEditGorev);
+            this.groupControl1.Controls.Add(this.lookUpEditSehir);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.pictureEdit4);
             this.groupControl1.Controls.Add(this.lookUpEditUlke);
@@ -413,17 +413,17 @@
             this.pictureEdit6.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit6.TabIndex = 14;
             // 
-            // lookUpEdit1
+            // lookUpEditilce
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(337, 65);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEditilce.Location = new System.Drawing.Point(337, 65);
+            this.lookUpEditilce.Name = "lookUpEditilce";
+            this.lookUpEditilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.DisplayMember = "GorevAd";
-            this.lookUpEdit1.Properties.NullText = "Görev Seçiniz";
-            this.lookUpEdit1.Properties.ValueMember = "GorevID";
-            this.lookUpEdit1.Size = new System.Drawing.Size(110, 20);
-            this.lookUpEdit1.TabIndex = 13;
+            this.lookUpEditilce.Properties.DisplayMember = "GorevAd";
+            this.lookUpEditilce.Properties.NullText = "Görev Seçiniz";
+            this.lookUpEditilce.Properties.ValueMember = "GorevID";
+            this.lookUpEditilce.Size = new System.Drawing.Size(110, 20);
+            this.lookUpEditilce.TabIndex = 13;
             // 
             // labelControl5
             // 
@@ -446,17 +446,17 @@
             this.pictureEdit5.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit5.TabIndex = 11;
             // 
-            // lookUpEditGorev
+            // lookUpEditSehir
             // 
-            this.lookUpEditGorev.Location = new System.Drawing.Point(337, 39);
-            this.lookUpEditGorev.Name = "lookUpEditGorev";
-            this.lookUpEditGorev.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.lookUpEditSehir.Location = new System.Drawing.Point(337, 39);
+            this.lookUpEditSehir.Name = "lookUpEditSehir";
+            this.lookUpEditSehir.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEditGorev.Properties.DisplayMember = "GorevAd";
-            this.lookUpEditGorev.Properties.NullText = "Görev Seçiniz";
-            this.lookUpEditGorev.Properties.ValueMember = "GorevID";
-            this.lookUpEditGorev.Size = new System.Drawing.Size(110, 20);
-            this.lookUpEditGorev.TabIndex = 10;
+            this.lookUpEditSehir.Properties.DisplayMember = "Şehir";
+            this.lookUpEditSehir.Properties.NullText = "Şehir Seçiniz";
+            this.lookUpEditSehir.Properties.ValueMember = "Id";
+            this.lookUpEditSehir.Size = new System.Drawing.Size(110, 20);
+            this.lookUpEditSehir.TabIndex = 10;
             // 
             // labelControl4
             // 
@@ -590,9 +590,9 @@
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditilce.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditGorev.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditSehir.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUlke.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
@@ -634,7 +634,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEditGorev;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditSehir;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.LookUpEdit lookUpEditUlke;
@@ -646,6 +646,6 @@
         private DevExpress.XtraEditors.TextEdit TxtAdSoyad;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEditilce;
     }
 }

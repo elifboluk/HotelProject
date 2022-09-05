@@ -27,6 +27,14 @@ namespace OtelProject.Formlar.Misafir
                                                         x.UlkeID,
                                                         x.UlkeAd
                                                     }).ToList();
+
+            // Şehir Listesi
+            lookUpEditSehir.Properties.DataSource = (from x in db.iller
+                                                    select new
+                                                    {
+                                                        Id=x.id,
+                                                        Şehir=x.sehir
+                                                    }).ToList();
         }
 
         private void lookUpEditUlke_EditValueChanged(object sender, EventArgs e)
