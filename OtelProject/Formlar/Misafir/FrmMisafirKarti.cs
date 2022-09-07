@@ -108,12 +108,12 @@ namespace OtelProject.Formlar.Misafir
             t.Adres = TxtAdres.Text;
             t.Aciklama = TxtAciklama.Text;
             t.Durum = 1;
-            // t.Sehir = lookUpEditSehir.Text;
-            // t.ilce = lookUpEditilce.Text;
-            t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
-            repo.TAdd(t);
+            t.sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
+            //t.ilce = int.Parse(lookUpEditilce.EditValue.ToString());
+            t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());            
             t.KimlikFoto1 = resim1;
             t.KimlikFoto2 = resim2;
+            repo.TAdd(t);
             XtraMessageBox.Show("Misafir sisteme başarılı bir şekilde kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

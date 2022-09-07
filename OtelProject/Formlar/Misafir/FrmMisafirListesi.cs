@@ -29,8 +29,8 @@ namespace OtelProject.Formlar.Misafir
                                          x.TC,
                                          x.Telefon,
                                          x.Mail,
-                                         // x.Sehir,
-                                         // x.ilce
+                                         x.iller.sehir,
+                                         x.ilceler.ilce
                                      } ).ToList();
 
         }
