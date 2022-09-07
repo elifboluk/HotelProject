@@ -36,13 +36,13 @@ namespace OtelProject.Formlar.Misafir
                 TxtTelefon.Text = misafir.Telefon;
                 TxtMail.Text = misafir.Mail;                
                 TxtAciklama.Text = misafir.Aciklama;                
-                PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
-                PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
+                // PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
+                // PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
                 resim1 = misafir.KimlikFoto1;
                 resim2 = misafir.KimlikFoto2;
                 lookUpEditSehir.EditValue = misafir.sehir; // Misafir kartına şehir bilgisi geldi.
                 lookUpEditUlke.EditValue = misafir.Ulke; // Misafir kartına ülke bilgisi geldi.
-                // lookUpEditilce.EditValue = misafir.ilce; // Misafir kartına ilçe bilgisi geldi.
+                lookUpEditilce.EditValue = misafir.ilce; // Misafir kartına ilçe bilgisi geldi.
 
 
 
@@ -79,7 +79,7 @@ namespace OtelProject.Formlar.Misafir
                                                   {
                                                      Id= x.id,
                                                      İlçe=x.ilce, 
-                                                      Şehir = x.sehir
+                                                     Şehir = x.sehir
                                                   } ).Where(y=>y.Şehir==secilen).ToList();
         }
         
@@ -99,6 +99,25 @@ namespace OtelProject.Formlar.Misafir
             this.Close();
         }
 
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            var deger = repo.Find(x => x.MisafirID == id); // x öyle ki => repo nesnesinin bağlı bulunduğu T entity'sine göre bu T entity'e ait property'ler gelecek. TblMisafir'de çalıştığımız için TblMisafir'deki verileri getirecek.(MisafirID = dışarıdan gönderdiğimiz id'ye.)
+            deger.AdSoyad = TxtAdSoyad.Text;
+            deger.TC = TxtTc.Text;
+            deger.Mail = TxtMail.Text;
+            deger.Telefon = TxtTelefon.Text;
+            deger.Adres = TxtAdres.Text;
+            deger.Aciklama = TxtAciklama.Text;
+            deger.KimlikFoto1 = resim1;
+            deger.KimlikFoto2 = resim2;
+            deger.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
+            deger.sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
+            deger.ilce = int.Parse(lookUpEditilce.EditValue.ToString());
+            deger.Durum = 1;
+            repo.TUpdate(deger);
+            XtraMessageBox.Show("Misafir kartı bilgileri başarıyla güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
             t.AdSoyad = TxtAdSoyad.Text;
@@ -109,7 +128,7 @@ namespace OtelProject.Formlar.Misafir
             t.Aciklama = TxtAciklama.Text;
             t.Durum = 1;
             t.sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
-            //t.ilce = int.Parse(lookUpEditilce.EditValue.ToString());
+            t.ilce = int.Parse(lookUpEditilce.EditValue.ToString());
             t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());            
             t.KimlikFoto1 = resim1;
             t.KimlikFoto2 = resim2;

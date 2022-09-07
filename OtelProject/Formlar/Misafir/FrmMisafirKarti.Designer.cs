@@ -351,6 +351,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
             this.BtnGuncelle.TabIndex = 2;
             this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnKaydet
             // 
