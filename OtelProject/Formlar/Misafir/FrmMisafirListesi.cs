@@ -1,4 +1,5 @@
 ﻿using OtelProject.Entity;
+using OtelProject.Formlar.Personel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,14 +24,22 @@ namespace OtelProject.Formlar.Misafir
             gridControl1.DataSource=(from x in db.TblMisafir
                                      select new
                                      {
+                                         x.MisafirID,
                                          x.AdSoyad,
                                          x.TC,
                                          x.Telefon,
                                          x.Mail,
-                                         x.Sehir,
-                                         x.ilce
+                                         // x.Sehir,
+                                         // x.ilce
                                      } ).ToList();
 
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmMisafirKarti fr = new FrmMisafirKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("MisafirID").ToString());// (Odaklanılan satırı al=GetFocusedRow), (Hücrenin değeri=CellValue) Odaklanılan satırdaki hücrenin değerini al. Çift tırnak içerisinde değeri alınacak olan hücreyi yazarız. (ToString=string formatında al)
+            fr.Show();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace OtelProject.Formlar.Personel
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
             this.Text = id.ToString(); // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
-            if (id != 0)
+            if (id != 0) //Form yüklendiğinde id sıfır değilse aşağıdaki işlemleri yap.
             {
                 var personel = repo.Find(x => x.PersonelID == id);
                 TxtAdSoyad.Text = personel.AdSoyad;
@@ -44,8 +44,6 @@ namespace OtelProject.Formlar.Personel
                 labelControl16.Text = personel.KimlikArka; // Label16'ya personel kimlik arka fotoğrafının değerini (bilgilerini) yazdır.
                 lookUpEditDepartman.EditValue = personel.Departman; // Personel kartına departman bilgisi geldi.
                 lookUpEditGorev.EditValue = personel.Gorev; // Personel kartına görev bilgisi geldi.
-
-
             }
 
 

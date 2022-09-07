@@ -20,8 +20,34 @@ namespace OtelProject.Formlar.Misafir
             InitializeComponent();
         }
         DbOtelEntities db = new DbOtelEntities();
+        Repository<TblMisafir> repo = new Repository<TblMisafir>();
+        TblMisafir t = new TblMisafir();
+        public int id;
+        string resim1, resim2;
         private void FrmMisafirKarti_Load(object sender, EventArgs e)
         {
+            // Güncellenecek kart bilgileri
+            if (id != 0) //Form yüklendiğinde id sıfır değilse aşağıdaki işlemleri yap.
+            {
+                var misafir = repo.Find(x => x.MisafirID == id);
+                TxtAdSoyad.Text = misafir.AdSoyad;
+                TxtTc.Text = misafir.TC;
+                TxtAdres.Text = misafir.Adres;
+                TxtTelefon.Text = misafir.Telefon;
+                TxtMail.Text = misafir.Mail;                
+                TxtAciklama.Text = misafir.Aciklama;                
+                // PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
+                // PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
+                resim1 = misafir.KimlikFoto1;
+                resim2 = misafir.KimlikFoto2;
+                // lookUpEditSehir.EditValue = misafir.Sehir; // Misafir kartına şehir bilgisi geldi.
+                lookUpEditUlke.EditValue = misafir.Ulke; // Misafir kartına ülke bilgisi geldi.
+                // lookUpEditilce.EditValue = misafir.ilce; // Misafir kartına ilçe bilgisi geldi.
+
+
+
+            }
+
             // Ülke Listesi
             lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
                                                     select new
@@ -56,7 +82,7 @@ namespace OtelProject.Formlar.Misafir
                                                       Şehir = x.sehir
                                                   } ).Where(y=>y.Şehir==secilen).ToList();
         }
-        string resim1, resim2;
+        
 
         private void PictureEditKimlikOn_EditValueChanged(object sender, EventArgs e)
         {
@@ -75,8 +101,6 @@ namespace OtelProject.Formlar.Misafir
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            Repository<TblMisafir> repo = new Repository<TblMisafir>();
-            TblMisafir t = new TblMisafir();
             t.AdSoyad = TxtAdSoyad.Text;
             t.TC = TxtTc.Text;
             t.Telefon = TxtTelefon.Text;
@@ -84,8 +108,8 @@ namespace OtelProject.Formlar.Misafir
             t.Adres = TxtAdres.Text;
             t.Aciklama = TxtAciklama.Text;
             t.Durum = 1;
-            t.Sehir = lookUpEditSehir.Text;
-            t.ilce = lookUpEditilce.Text;
+            // t.Sehir = lookUpEditSehir.Text;
+            // t.ilce = lookUpEditilce.Text;
             t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
             repo.TAdd(t);
             t.KimlikFoto1 = resim1;
