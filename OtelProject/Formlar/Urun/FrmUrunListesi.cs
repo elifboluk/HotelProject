@@ -24,7 +24,8 @@ namespace OtelProject.Formlar.Urun
                                        select new
                                        {
                                            x.UrunID,
-                                           x.UrunAd,
+                                           x.TblUrunGrup.UrunGrupAd,
+                                           x.UrunAd, 
                                            x.Fiyat,
                                            x.Birim,
                                            x.Toplam
