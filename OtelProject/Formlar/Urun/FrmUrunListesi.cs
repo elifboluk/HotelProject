@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace OtelProject.Formlar.Urun
         public FrmUrunListesi()
         {
             InitializeComponent();
+        }
+        DbOtelEntities db = new DbOtelEntities();
+        private void FrmUrunListesi_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = (from x in db.TblUrun
+                                       select new
+                                       {
+                                           x.UrunID,
+                                           x.UrunAd,
+                                           x.Fiyat,
+                                           x.Birim,
+                                           x.Toplam
+                                       }).ToList();
+
         }
     }
 }
