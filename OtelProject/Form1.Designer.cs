@@ -46,6 +46,8 @@
             this.BtnPersonelKarti = new DevExpress.XtraBars.BarButtonItem();
             this.BtnMisafirListesi = new DevExpress.XtraBars.BarButtonItem();
             this.BtnMisafirKarti = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnUrunListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnUrunKarti = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -60,8 +62,6 @@
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnUrunListesi = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnUrunKarti = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -235,6 +235,24 @@
             this.BtnMisafirKarti.Name = "BtnMisafirKarti";
             this.BtnMisafirKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMisafirKarti_ItemClick);
             // 
+            // BtnUrunListesi
+            // 
+            this.BtnUrunListesi.Caption = "Ürün Listesi";
+            this.BtnUrunListesi.Id = 16;
+            this.BtnUrunListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnUrunListesi.ImageOptions.Image")));
+            this.BtnUrunListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnUrunListesi.ImageOptions.LargeImage")));
+            this.BtnUrunListesi.Name = "BtnUrunListesi";
+            this.BtnUrunListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnUrunListesi_ItemClick);
+            // 
+            // BtnUrunKarti
+            // 
+            this.BtnUrunKarti.Caption = "Ürün Kartı";
+            this.BtnUrunKarti.Id = 17;
+            this.BtnUrunKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnUrunKarti.ImageOptions.Image")));
+            this.BtnUrunKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnUrunKarti.ImageOptions.LargeImage")));
+            this.BtnUrunKarti.Name = "BtnUrunKarti";
+            this.BtnUrunKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnUrunKarti_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -330,23 +348,6 @@
             this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
             this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
             this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // BtnUrunListesi
-            // 
-            this.BtnUrunListesi.Caption = "Ürün Listesi";
-            this.BtnUrunListesi.Id = 16;
-            this.BtnUrunListesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BtnUrunListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.BtnUrunListesi.Name = "BtnUrunListesi";
-            this.BtnUrunListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnUrunListesi_ItemClick);
-            // 
-            // BtnUrunKarti
-            // 
-            this.BtnUrunKarti.Caption = "Ürün Kartı";
-            this.BtnUrunKarti.Id = 17;
-            this.BtnUrunKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.BtnUrunKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.BtnUrunKarti.Name = "BtnUrunKarti";
             // 
             // Form1
             // 

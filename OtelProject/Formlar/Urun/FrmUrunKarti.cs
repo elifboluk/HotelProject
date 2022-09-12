@@ -16,5 +16,7 @@ namespace OtelProject.Formlar.Urun
         {
             InitializeComponent();
         }
+
+       
     }
 }

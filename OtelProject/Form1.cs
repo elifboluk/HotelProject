@@ -116,5 +116,11 @@ namespace OtelProject
             fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum dedik.
             fr.Show();
         }
+
+        private void BtnUrunKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunKarti fr = new Formlar.Urun.FrmUrunKarti();
+            fr.Show();
+        }
     }
 }
