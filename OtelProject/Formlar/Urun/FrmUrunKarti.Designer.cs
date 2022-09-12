@@ -28,9 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUrunKarti));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.TxtToplam = new DevExpress.XtraEditors.LabelControl();
+            this.Rdb4 = new System.Windows.Forms.RadioButton();
+            this.Rdb3 = new System.Windows.Forms.RadioButton();
+            this.Rdb2 = new System.Windows.Forms.RadioButton();
+            this.Rdb1 = new System.Windows.Forms.RadioButton();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtKdv = new DevExpress.XtraEditors.TextEdit();
+            this.TxtToplam = new DevExpress.XtraEditors.TextEdit();
+            this.labelToplam = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
@@ -38,18 +47,10 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtUrunAdi = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.TxtKDV = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.TxtAciklama = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
-            this.Rdb1 = new System.Windows.Forms.RadioButton();
-            this.Rdb2 = new System.Windows.Forms.RadioButton();
-            this.Rdb3 = new System.Windows.Forms.RadioButton();
-            this.Rdb4 = new System.Windows.Forms.RadioButton();
             this.lookUpEditDurum = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
@@ -64,16 +65,17 @@
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKdv.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtToplam.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFiyat.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAdi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtKDV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
@@ -88,6 +90,7 @@
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -98,9 +101,9 @@
             this.groupControl1.Controls.Add(this.Rdb1);
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.pictureEdit3);
-            this.groupControl1.Controls.Add(this.TxtKDV);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.TxtKdv);
             this.groupControl1.Controls.Add(this.TxtToplam);
+            this.groupControl1.Controls.Add(this.labelToplam);
             this.groupControl1.Controls.Add(this.pictureEdit4);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.pictureEdit2);
@@ -115,13 +118,92 @@
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "groupControl1";
             // 
+            // Rdb4
+            // 
+            this.Rdb4.AutoSize = true;
+            this.Rdb4.Location = new System.Drawing.Point(401, 74);
+            this.Rdb4.Name = "Rdb4";
+            this.Rdb4.Size = new System.Drawing.Size(48, 17);
+            this.Rdb4.TabIndex = 25;
+            this.Rdb4.TabStop = true;
+            this.Rdb4.Text = "%18";
+            this.Rdb4.UseVisualStyleBackColor = true;
+            // 
+            // Rdb3
+            // 
+            this.Rdb3.AutoSize = true;
+            this.Rdb3.Location = new System.Drawing.Point(343, 74);
+            this.Rdb3.Name = "Rdb3";
+            this.Rdb3.Size = new System.Drawing.Size(48, 17);
+            this.Rdb3.TabIndex = 24;
+            this.Rdb3.TabStop = true;
+            this.Rdb3.Text = "%10";
+            this.Rdb3.UseVisualStyleBackColor = true;
+            // 
+            // Rdb2
+            // 
+            this.Rdb2.AutoSize = true;
+            this.Rdb2.Location = new System.Drawing.Point(284, 74);
+            this.Rdb2.Name = "Rdb2";
+            this.Rdb2.Size = new System.Drawing.Size(42, 17);
+            this.Rdb2.TabIndex = 23;
+            this.Rdb2.TabStop = true;
+            this.Rdb2.Text = "%8";
+            this.Rdb2.UseVisualStyleBackColor = true;
+            // 
+            // Rdb1
+            // 
+            this.Rdb1.AutoSize = true;
+            this.Rdb1.Location = new System.Drawing.Point(226, 74);
+            this.Rdb1.Name = "Rdb1";
+            this.Rdb1.Size = new System.Drawing.Size(42, 17);
+            this.Rdb1.TabIndex = 8;
+            this.Rdb1.TabStop = true;
+            this.Rdb1.Text = "%1";
+            this.Rdb1.UseVisualStyleBackColor = true;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(41, 76);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(18, 13);
+            this.labelControl3.TabIndex = 19;
+            this.labelControl3.Text = "Kdv";
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(15, 69);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit3.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit3.TabIndex = 18;
+            // 
+            // TxtKdv
+            // 
+            this.TxtKdv.Location = new System.Drawing.Point(107, 69);
+            this.TxtKdv.Name = "TxtKdv";
+            this.TxtKdv.Size = new System.Drawing.Size(110, 20);
+            this.TxtKdv.TabIndex = 16;
+            // 
             // TxtToplam
             // 
-            this.TxtToplam.Location = new System.Drawing.Point(274, 46);
+            this.TxtToplam.Location = new System.Drawing.Point(336, 39);
             this.TxtToplam.Name = "TxtToplam";
-            this.TxtToplam.Size = new System.Drawing.Size(34, 13);
-            this.TxtToplam.TabIndex = 9;
-            this.TxtToplam.Text = "Toplam";
+            this.TxtToplam.Size = new System.Drawing.Size(110, 20);
+            this.TxtToplam.TabIndex = 7;
+            // 
+            // labelToplam
+            // 
+            this.labelToplam.Location = new System.Drawing.Point(274, 46);
+            this.labelToplam.Name = "labelToplam";
+            this.labelToplam.Size = new System.Drawing.Size(34, 13);
+            this.labelToplam.TabIndex = 9;
+            this.labelToplam.Text = "Toplam";
             // 
             // pictureEdit4
             // 
@@ -159,6 +241,7 @@
             // 
             // TxtFiyat
             // 
+            this.TxtFiyat.EditValue = "";
             this.TxtFiyat.Location = new System.Drawing.Point(107, 39);
             this.TxtFiyat.Name = "TxtFiyat";
             this.TxtFiyat.Size = new System.Drawing.Size(110, 20);
@@ -191,41 +274,6 @@
             this.TxtUrunAdi.Name = "TxtUrunAdi";
             this.TxtUrunAdi.Size = new System.Drawing.Size(339, 20);
             this.TxtUrunAdi.TabIndex = 1;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(336, 39);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(110, 20);
-            this.textEdit1.TabIndex = 7;
-            // 
-            // TxtKDV
-            // 
-            this.TxtKDV.Location = new System.Drawing.Point(107, 69);
-            this.TxtKDV.Name = "TxtKDV";
-            this.TxtKDV.Size = new System.Drawing.Size(110, 20);
-            this.TxtKDV.TabIndex = 16;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(41, 76);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(19, 13);
-            this.labelControl3.TabIndex = 19;
-            this.labelControl3.Text = "KDV";
-            // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(15, 69);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit3.Size = new System.Drawing.Size(20, 20);
-            this.pictureEdit3.TabIndex = 18;
             // 
             // groupControl6
             // 
@@ -266,50 +314,6 @@
             this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.pictureEdit13.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit13.TabIndex = 2;
-            // 
-            // Rdb1
-            // 
-            this.Rdb1.AutoSize = true;
-            this.Rdb1.Location = new System.Drawing.Point(226, 74);
-            this.Rdb1.Name = "Rdb1";
-            this.Rdb1.Size = new System.Drawing.Size(42, 17);
-            this.Rdb1.TabIndex = 8;
-            this.Rdb1.TabStop = true;
-            this.Rdb1.Text = "%1";
-            this.Rdb1.UseVisualStyleBackColor = true;
-            // 
-            // Rdb2
-            // 
-            this.Rdb2.AutoSize = true;
-            this.Rdb2.Location = new System.Drawing.Point(284, 74);
-            this.Rdb2.Name = "Rdb2";
-            this.Rdb2.Size = new System.Drawing.Size(42, 17);
-            this.Rdb2.TabIndex = 23;
-            this.Rdb2.TabStop = true;
-            this.Rdb2.Text = "%8";
-            this.Rdb2.UseVisualStyleBackColor = true;
-            // 
-            // Rdb3
-            // 
-            this.Rdb3.AutoSize = true;
-            this.Rdb3.Location = new System.Drawing.Point(343, 74);
-            this.Rdb3.Name = "Rdb3";
-            this.Rdb3.Size = new System.Drawing.Size(48, 17);
-            this.Rdb3.TabIndex = 24;
-            this.Rdb3.TabStop = true;
-            this.Rdb3.Text = "%10";
-            this.Rdb3.UseVisualStyleBackColor = true;
-            // 
-            // Rdb4
-            // 
-            this.Rdb4.AutoSize = true;
-            this.Rdb4.Location = new System.Drawing.Point(401, 74);
-            this.Rdb4.Name = "Rdb4";
-            this.Rdb4.Size = new System.Drawing.Size(48, 17);
-            this.Rdb4.TabIndex = 25;
-            this.Rdb4.TabStop = true;
-            this.Rdb4.Text = "%18";
-            this.Rdb4.UseVisualStyleBackColor = true;
             // 
             // lookUpEditDurum
             // 
@@ -487,14 +491,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKdv.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtToplam.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtFiyat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUrunAdi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtKDV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
@@ -511,6 +515,7 @@
             this.groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,7 +523,7 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.LabelControl TxtToplam;
+        private DevExpress.XtraEditors.LabelControl labelToplam;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
@@ -528,8 +533,8 @@
         private DevExpress.XtraEditors.TextEdit TxtUrunAdi;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
-        private DevExpress.XtraEditors.TextEdit TxtKDV;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtKdv;
+        private DevExpress.XtraEditors.TextEdit TxtToplam;
         private System.Windows.Forms.RadioButton Rdb4;
         private System.Windows.Forms.RadioButton Rdb3;
         private System.Windows.Forms.RadioButton Rdb2;
@@ -552,5 +557,6 @@
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private DevExpress.XtraEditors.SimpleButton BtnVazgec;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }

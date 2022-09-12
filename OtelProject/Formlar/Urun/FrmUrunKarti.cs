@@ -1,4 +1,5 @@
-﻿using OtelProject.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
 using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
@@ -62,10 +63,17 @@ namespace OtelProject.Formlar.Urun
             t.UrunGrup = int.Parse(lookUpEditUrunGrup.EditValue.ToString());
             t.Birim = int.Parse(lookUpEditBirim.EditValue.ToString());
             t.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
-            t.Fiyat = Decimal.Parse(TxtFiyat.Text);
+            t.Fiyat = decimal.Parse(TxtFiyat.Text);            
+            t.Toplam = decimal.Parse(TxtToplam.Text);
+            t.Kdv = byte.Parse(TxtKdv.Text);
+            repo.TAdd(t);
+            XtraMessageBox.Show("Ürün başarılı bir şekilde veri tabanına kaydedildi.");
+
 
 
 
         }
+
+        
     }
 }
