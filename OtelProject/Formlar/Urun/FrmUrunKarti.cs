@@ -1,4 +1,5 @@
 ﻿using OtelProject.Entity;
+using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,6 +37,34 @@ namespace OtelProject.Formlar.Urun
                                                         x.BirimID,
                                                         x.BirimAd
                                                     }).ToList();
+
+            // Durum Listesi
+            lookUpEditDurum.Properties.DataSource = (from x in db.TblDurum
+                                                    select new
+                                                    {
+                                                        x.DurumID,
+                                                        x.DurumAd
+                                                    }).ToList();
+
+        }
+
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Üzerinde çalıştığın formu kapat.
+
+        }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            Repository<TblUrun> repo = new Repository<TblUrun>(); // Ürün tablosundan bir nesne türettik.
+            TblUrun t = new TblUrun();
+            t.UrunAd = TxtUrunAdi.Text;
+            t.UrunGrup = int.Parse(lookUpEditUrunGrup.EditValue.ToString());
+            t.Birim = int.Parse(lookUpEditBirim.EditValue.ToString());
+            t.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
+            t.Fiyat = Decimal.Parse(TxtFiyat.Text);
+
+
 
         }
     }
