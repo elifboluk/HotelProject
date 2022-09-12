@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,7 +17,26 @@ namespace OtelProject.Formlar.Urun
         {
             InitializeComponent();
         }
+        DbOtelEntities db = new DbOtelEntities();
 
-       
+        private void FrmUrunKarti_Load(object sender, EventArgs e)
+        {
+            // Ürün Grup Listesi
+            lookUpEditUrunGrup.Properties.DataSource = (from x in db.TblUrunGrup
+                                                    select new
+                                                    {
+                                                        x.UrunGrupID,
+                                                        x.UrunGrupAd
+                                                    }).ToList();
+
+            // Birim Listesi
+            lookUpEditBirim.Properties.DataSource = (from x in db.TblBirim
+                                                    select new
+                                                    {
+                                                        x.BirimID,
+                                                        x.BirimAd
+                                                    }).ToList();
+
+        }
     }
 }
