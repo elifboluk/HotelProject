@@ -101,5 +101,37 @@ namespace OtelProject.Formlar.Urun
             XtraMessageBox.Show("Ürün başarılı bir şekilde güncellendi.");
 
         }
+
+        private void Rdb1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Rdb1.Checked == true)
+            {
+                TxtKdv.Text = "1";
+            }
+        }
+
+        private void Rdb2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Rdb2.Checked == true)
+            {
+                TxtKdv.Text = "8";
+            }
+        }
+
+        private void Rdb3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Rdb3.Checked == true)
+            {
+                TxtKdv.Text = "10";
+            }
+        }
+
+        private void Rdb4_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Rdb4.Checked == true)
+            {
+                TxtKdv.Text = "18";
+            }
+        }
     }
 }
