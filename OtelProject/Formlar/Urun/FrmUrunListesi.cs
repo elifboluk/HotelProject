@@ -32,5 +32,12 @@ namespace OtelProject.Formlar.Urun
                                        }).ToList();
 
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmUrunKarti fr = new FrmUrunKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("UrunID").ToString());
+            fr.Show();
+        }
     }
 }
