@@ -14,6 +14,12 @@ namespace OtelProject.Entity
     
     public partial class TblUrun
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public TblUrun()
+        {
+            this.TblUrunHareket = new HashSet<TblUrunHareket>();
+        }
+    
         public int UrunID { get; set; }
         public string UrunAd { get; set; }
         public Nullable<int> UrunGrup { get; set; }
@@ -26,5 +32,7 @@ namespace OtelProject.Entity
         public virtual TblBirim TblBirim { get; set; }
         public virtual TblDurum TblDurum { get; set; }
         public virtual TblUrunGrup TblUrunGrup { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TblUrunHareket> TblUrunHareket { get; set; }
     }
 }
