@@ -92,7 +92,7 @@ namespace OtelProject
         private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Personel.FrmPersonelListesi fr = new Formlar.Personel.FrmPersonelListesi();
-            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum dedik.
+            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum.
             fr.Show();
 
         }
@@ -106,20 +106,34 @@ namespace OtelProject
         private void BtnMisafirListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Misafir.FrmMisafirListesi fr = new Formlar.Misafir.FrmMisafirListesi();
-            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum dedik.
+            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum.
             fr.Show();
         }
 
         private void BtnUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Urun.FrmUrunListesi fr = new Formlar.Urun.FrmUrunListesi();
-            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum dedik.
+            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında personel listesini görmek istiyorum.
             fr.Show();
         }
 
         private void BtnUrunKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Urun.FrmUrunKarti fr = new Formlar.Urun.FrmUrunKarti();
+            fr.Show();
+        }
+
+        private void BtnUrunGiris_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunGirisHareketleri fr = new Formlar.Urun.FrmUrunGirisHareketleri();
+            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında ürün giriş hareketleri listesini görmek istiyorum.
+            fr.Show();
+        }
+
+        private void BtnUrunCikis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunCikisHareketleri fr = new Formlar.Urun.FrmUrunCikisHareketleri();
+            fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında ürün giriş hareketleri listesini görmek istiyorum.
             fr.Show();
         }
     }
