@@ -136,5 +136,11 @@ namespace OtelProject
             fr.MdiParent = this; // Üzerinde çalıştığım formun (Form1) Mdi alanında ürün giriş hareketleri listesini görmek istiyorum.
             fr.Show();
         }
+
+        private void BtnYeniUrunHareketi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunHareketTanimi fr = new Formlar.Urun.FrmUrunHareketTanimi();            
+            fr.Show();
+        }
     }
 }
