@@ -39,21 +39,21 @@
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtToplam = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMiktar = new DevExpress.XtraEditors.TextEdit();
             this.labelToplam = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtID = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditUrun.Properties)).BeginInit();
@@ -63,17 +63,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtToplam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMiktar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl3
@@ -96,6 +96,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
             this.BtnGuncelle.TabIndex = 2;
             this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnKaydet
             // 
@@ -105,6 +106,7 @@
             this.BtnKaydet.Size = new System.Drawing.Size(103, 30);
             this.BtnKaydet.TabIndex = 1;
             this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnVazgec
             // 
@@ -114,6 +116,7 @@
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 0;
             this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // lookUpEditUrun
             // 
@@ -179,6 +182,27 @@
             this.groupControl1.TabIndex = 35;
             this.groupControl1.Text = "groupControl1";
             // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(41, 12);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(41, 13);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Ürün Adı";
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(15, 5);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit1.TabIndex = 0;
+            // 
             // labelControl3
             // 
             this.labelControl3.Location = new System.Drawing.Point(41, 66);
@@ -200,12 +224,12 @@
             this.pictureEdit3.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit3.TabIndex = 18;
             // 
-            // TxtToplam
+            // TxtMiktar
             // 
-            this.TxtToplam.Location = new System.Drawing.Point(336, 58);
-            this.TxtToplam.Name = "TxtToplam";
-            this.TxtToplam.Size = new System.Drawing.Size(120, 20);
-            this.TxtToplam.TabIndex = 7;
+            this.TxtMiktar.Location = new System.Drawing.Point(336, 58);
+            this.TxtMiktar.Name = "TxtMiktar";
+            this.TxtMiktar.Size = new System.Drawing.Size(120, 20);
+            this.TxtMiktar.TabIndex = 7;
             // 
             // labelToplam
             // 
@@ -249,27 +273,6 @@
             this.pictureEdit2.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit2.TabIndex = 3;
             // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(41, 12);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(41, 13);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Ürün Adı";
-            // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(15, 5);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit1.Size = new System.Drawing.Size(20, 20);
-            this.pictureEdit1.TabIndex = 0;
-            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -298,7 +301,7 @@
             // 
             this.groupControl2.Controls.Add(this.pictureEdit5);
             this.groupControl2.Controls.Add(this.labelControl4);
-            this.groupControl2.Controls.Add(this.textEdit1);
+            this.groupControl2.Controls.Add(this.TxtID);
             this.groupControl2.Controls.Add(this.dateEdit1);
             this.groupControl2.Controls.Add(this.comboBox1);
             this.groupControl2.Controls.Add(this.pictureEdit2);
@@ -307,7 +310,7 @@
             this.groupControl2.Controls.Add(this.pictureEdit4);
             this.groupControl2.Controls.Add(this.pictureEdit3);
             this.groupControl2.Controls.Add(this.labelToplam);
-            this.groupControl2.Controls.Add(this.TxtToplam);
+            this.groupControl2.Controls.Add(this.TxtMiktar);
             this.groupControl2.Location = new System.Drawing.Point(12, 69);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
@@ -336,12 +339,12 @@
             this.labelControl4.TabIndex = 33;
             this.labelControl4.Text = "ID";
             // 
-            // textEdit1
+            // TxtID
             // 
-            this.textEdit1.Location = new System.Drawing.Point(103, 33);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(120, 20);
-            this.textEdit1.TabIndex = 31;
+            this.TxtID.Location = new System.Drawing.Point(103, 33);
+            this.TxtID.Name = "TxtID";
+            this.TxtID.Size = new System.Drawing.Size(120, 20);
+            this.TxtID.TabIndex = 31;
             // 
             // FrmUrunHareketTanimi
             // 
@@ -369,18 +372,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtToplam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMiktar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtID.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -401,7 +404,7 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
-        private DevExpress.XtraEditors.TextEdit TxtToplam;
+        private DevExpress.XtraEditors.TextEdit TxtMiktar;
         private DevExpress.XtraEditors.LabelControl labelToplam;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -411,6 +414,6 @@
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtID;
     }
 }
