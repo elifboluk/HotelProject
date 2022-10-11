@@ -26,7 +26,7 @@ namespace OtelProject.Formlar.Urun
 
         private void FrmUrunHareketTanimi_Load(object sender, EventArgs e)
         {
-            // Ürün Grup Listesi
+            // Ürün Hareket Tanımı Listesi
             lookUpEditUrun.Properties.DataSource = (from x in db.TblUrun
                                                         select new
                                                         {
