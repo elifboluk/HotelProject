@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using OtelProject.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,34 @@ namespace OtelProject.Formlar.Rezervasyon
         public FrmRezervasyonKarti()
         {
             InitializeComponent();
+        }
+
+        DbOtelEntities db = new DbOtelEntities();
+        Repository<TblRezervasyon> repo = new Repository<TblRezervasyon>(); // Rezervasyon tablosundan bir nesne türettik.
+        TblRezervasyon t = new TblRezervasyon();
+        public int id;
+
+        private void FrmRezervasyonKarti_Load(object sender, EventArgs e)
+        {
+
+            // Misafir Listesi
+            lookUpEditMisafir.Properties.DataSource = (from x in db.TblMisafir
+                                                        select new
+                                                        {
+                                                            x.MisafirID,
+                                                            x.AdSoyad
+                                                        }).ToList();
+
+
+            // Oda Listesi
+            lookUpEditOda.Properties.DataSource = (from x in db.TblOda
+                                                        select new
+                                                        {
+                                                            x.OdaID,
+                                                            x.OdaNo,
+                                                            x.TblDurum.DurumAd
+                                                        }).Where(y=>y.DurumAd=="Aktif").ToList();
+
         }
     }
 }
