@@ -1,4 +1,5 @@
-﻿using OtelProject.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
 using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
@@ -59,6 +60,22 @@ namespace OtelProject.Formlar.Rezervasyon
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            TblRezervasyon t = new TblRezervasyon();
+            t.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
+            t.GirisTarih = DateTime.Parse(dateEditGiris.Text);
+            t.CikisTarih = DateTime.Parse(dateEditCikis.Text);
+            t.Kisi = numericUpDown1.Value.ToString();
+            t.Oda = int.Parse(lookUpEditOda.EditValue.ToString());
+            t.RezervasyonAdSoyad = TxtRezervasyonAdSoyad.Text;
+            t.Telefon = TxtTelefon.Text;
+            t.Aciklama = TxtAciklama.Text;
+            t.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
+            repo.TAdd(t);
+            XtraMessageBox.Show("Rezervasyon başarılı bir şekilde oluşturuldu.");
         }
     }
 }
