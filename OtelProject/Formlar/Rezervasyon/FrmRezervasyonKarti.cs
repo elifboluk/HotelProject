@@ -45,6 +45,20 @@ namespace OtelProject.Formlar.Rezervasyon
                                                             x.TblDurum.DurumAd
                                                         }).Where(y=>y.DurumAd=="Aktif").ToList();
 
+
+            // Durum Listesi
+            lookUpEditDurum.Properties.DataSource = (from x in db.TblDurum
+                                                        select new
+                                                        {
+                                                            x.DurumID,
+                                                            x.DurumAd
+                                                        }).ToList();
+
+        }
+
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
