@@ -148,5 +148,19 @@ namespace OtelProject
             Formlar.Rezervasyon.FrmRezervasyonKarti fr = new Formlar.Rezervasyon.FrmRezervasyonKarti();
             fr.Show();
         }
+
+        private void btnTumRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmTumRezervasyonlar fr = new Formlar.Rezervasyon.FrmTumRezervasyonlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void btnAktifRezervasyonlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmAktifRezervasyon fr = new Formlar.Rezervasyon.FrmAktifRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
