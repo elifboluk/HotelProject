@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,22 @@ namespace OtelProject.Formlar.Rezervasyon
         public FrmIptalRezervasyon()
         {
             InitializeComponent();
+        }
+        DbOtelEntities db = new DbOtelEntities();
+        private void FrmIptalRezervasyon_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = (from x in db.TblRezervasyon
+                                       select new
+                                       {
+                                           x.RezervasyonID,
+                                           x.TblMisafir.AdSoyad,
+                                           x.GirisTarih,
+                                           x.CikisTarih,
+                                           x.Kisi,
+                                           x.TblOda.OdaNo,
+                                           x.Telefon,
+                                           x.TblDurum.DurumAd
+                                       }).Where(y=>y.DurumAd=="Rezervasyon İptal").ToList();
         }
     }
 }

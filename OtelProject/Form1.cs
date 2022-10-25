@@ -162,5 +162,26 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btniptalRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmIptalRezervasyon fr = new Formlar.Rezervasyon.FrmIptalRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void btnGecmisRezervasyon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmGecmisRezervasyonlar fr = new Formlar.Rezervasyon.FrmGecmisRezervasyonlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void btnGelecekRezervasyonlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Rezervasyon.FrmGelecekRezervasyonlar fr = new Formlar.Rezervasyon.FrmGelecekRezervasyonlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

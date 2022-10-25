@@ -58,6 +58,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmIptalRezervasyon";
             this.Text = "İptal Edilen Rezervasyonlar";
+            this.Load += new System.EventHandler(this.FrmIptalRezervasyon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
