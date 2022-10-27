@@ -59,7 +59,7 @@
             this.btnGelecekRezervasyonlar = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnKurlar = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnYoutube = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.BtnExcel = new DevExpress.XtraBars.BarButtonItem();
@@ -124,7 +124,7 @@
             this.btnGelecekRezervasyonlar,
             this.barButtonItem2,
             this.BtnKurlar,
-            this.barButtonItem5,
+            this.BtnYoutube,
             this.barButtonItem6,
             this.BtnWord,
             this.BtnExcel,
@@ -391,13 +391,13 @@
             this.BtnKurlar.Name = "BtnKurlar";
             this.BtnKurlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKurlar_ItemClick);
             // 
-            // barButtonItem5
+            // BtnYoutube
             // 
-            this.barButtonItem5.Caption = "Youtube";
-            this.barButtonItem5.Id = 29;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.BtnYoutube.Caption = "Youtube";
+            this.BtnYoutube.Id = 29;
+            this.BtnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.BtnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.BtnYoutube.Name = "BtnYoutube";
             // 
             // barButtonItem6
             // 
@@ -567,7 +567,7 @@
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnKurlar);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup10.ItemLinks.Add(this.BtnYoutube);
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnHesapMakinesi);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnWord);
@@ -665,7 +665,7 @@
         private DevExpress.XtraBars.BarButtonItem btnGelecekRezervasyonlar;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem BtnKurlar;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem BtnYoutube;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem BtnWord;
         private DevExpress.XtraBars.BarButtonItem BtnExcel;
