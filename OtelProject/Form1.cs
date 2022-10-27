@@ -198,5 +198,12 @@ namespace OtelProject
         {
             System.Diagnostics.Process.Start("Calc.exe");
         }
+
+        private void BtnKurlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Araclar.FrmKurlar fr = new Formlar.Araclar.FrmKurlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }

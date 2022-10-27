@@ -166,6 +166,12 @@
     <Compile Include="Formlar\Araclar\FrmGoogle.Designer.cs">
       <DependentUpon>FrmGoogle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Araclar\FrmKurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Araclar\FrmKurlar.Designer.cs">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Araclar\FrmYoutube.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -330,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Araclar\FrmGoogle.resx">
       <DependentUpon>FrmGoogle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Araclar\FrmKurlar.resx">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Araclar\FrmYoutube.resx">
       <DependentUpon>FrmYoutube.cs</DependentUpon>
