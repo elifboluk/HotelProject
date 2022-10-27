@@ -19,7 +19,7 @@ namespace OtelProject.Formlar.Araclar
 
         private void FrmYoutube_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("http://www.youtube.com");
+            webBrowser1.Navigate("https://www.youtube.com");
         }
     }
 }
