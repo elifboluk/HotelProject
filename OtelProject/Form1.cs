@@ -183,5 +183,20 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnWord_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("msword.exe");
+        }
+
+        private void BtnHesapMakinesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
+
+        private void BtnExcel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
     }
 }

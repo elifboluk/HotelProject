@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace OtelProject.Formlar.Araclar
 {
-    public partial class FrmYoutube : Form
+    public partial class FrmGoogle : Form
     {
-        public FrmYoutube()
+        public FrmGoogle()
         {
             InitializeComponent();
         }
 
-        private void FrmYoutube_Load(object sender, EventArgs e)
+        private void FrmGoogle_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate("http://www.youtube.com");
+            webBrowser1.Navigate("http://www.google.com");
         }
     }
 }

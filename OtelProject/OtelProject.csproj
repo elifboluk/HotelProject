@@ -160,6 +160,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Araclar\FrmGoogle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Araclar\FrmGoogle.Designer.cs">
+      <DependentUpon>FrmGoogle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Araclar\FrmYoutube.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +327,12 @@
     <Compile Include="Repositories\Repository.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Araclar\FrmGoogle.resx">
+      <DependentUpon>FrmGoogle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Araclar\FrmYoutube.resx">
+      <DependentUpon>FrmYoutube.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Misafir\FrmMisafirKarti.resx">
       <DependentUpon>FrmMisafirKarti.cs</DependentUpon>

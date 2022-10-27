@@ -1,6 +1,6 @@
 ﻿namespace OtelProject.Formlar.Araclar
 {
-    partial class FrmYoutube
+    partial class FrmGoogle
     {
         /// <summary>
         /// Required designer variable.
@@ -38,17 +38,17 @@
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(884, 311);
-            this.webBrowser1.TabIndex = 0;
+            this.webBrowser1.TabIndex = 1;
             // 
-            // FrmYoutube
+            // FrmGoogle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 311);
             this.Controls.Add(this.webBrowser1);
-            this.Name = "FrmYoutube";
-            this.Text = "Youtube";
-            this.Load += new System.EventHandler(this.FrmYoutube_Load);
+            this.Name = "FrmGoogle";
+            this.Text = "Google";
+            this.Load += new System.EventHandler(this.FrmGoogle_Load);
             this.ResumeLayout(false);
 
         }
