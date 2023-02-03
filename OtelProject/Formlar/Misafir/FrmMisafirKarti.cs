@@ -45,28 +45,27 @@ namespace OtelProject.Formlar.Misafir
                     lookUpEditSehir.EditValue = misafir.sehir; // Misafir kartına şehir bilgisi geldi.
                     lookUpEditUlke.EditValue = misafir.Ulke; // Misafir kartına ülke bilgisi geldi.
                     lookUpEditilce.EditValue = misafir.ilce; // Misafir kartına ilçe bilgisi geldi.
-                }
-
-                // Ülke Listesi
-                lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
-                                                        select new
-                                                        {
-                                                            x.UlkeID,
-                                                            x.UlkeAd
-                                                        }).ToList();
-
-                // Şehir Listesi
-                lookUpEditSehir.Properties.DataSource = (from x in db.iller
-                                                         select new
-                                                         {
-                                                             Id = x.id,
-                                                             Şehir = x.sehir
-                                                         }).ToList();
+                }                
             }
             catch (Exception)
             {
                 XtraMessageBox.Show("Bir hata oluştu lütfen sütunları kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+            // Ülke Listesi
+            lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
+                                                    select new
+                                                    {
+                                                        x.UlkeID,
+                                                        x.UlkeAd
+                                                    }).ToList();
+
+            // Şehir Listesi
+            lookUpEditSehir.Properties.DataSource = (from x in db.iller
+                                                     select new
+                                                     {
+                                                         Id = x.id,
+                                                         Şehir = x.sehir
+                                                     }).ToList();
         }
 
         private void lookUpEditUlke_EditValueChanged(object sender, EventArgs e)
