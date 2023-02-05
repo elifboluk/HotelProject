@@ -38,8 +38,8 @@ namespace OtelProject.Formlar.Misafir
                     TxtTelefon.Text = misafir.Telefon;
                     TxtMail.Text = misafir.Mail;
                     TxtAciklama.Text = misafir.Aciklama;
-                    // PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
-                    // PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
+                    PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
+                    PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
                     resim1 = misafir.KimlikFoto1;
                     resim2 = misafir.KimlikFoto2;
                     lookUpEditSehir.EditValue = misafir.sehir; // Misafir kartına şehir bilgisi geldi.
