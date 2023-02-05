@@ -81,6 +81,20 @@ namespace OtelProject.Formlar.Rezervasyon
                                                             x.DurumAd
                                                         }).ToList();
 
+            // Ürün Güncelleme Alanı
+            if (id != 0)
+            {
+                var rezervasyon = repo.Find(x => x.RezervasyonID == id);
+                lookUpEditMisafir.EditValue = rezervasyon.Misafir;
+                dateEditGiris.Text = rezervasyon.GirisTarih.ToString();
+                dateEditCikis.Text = rezervasyon.CikisTarih.ToString();
+                numericUpDown1.Value = decimal.Parse(rezervasyon.Kisi.ToString());
+                lookUpEditOda.EditValue = rezervasyon.Oda;
+                TxtTelefon.Text = rezervasyon.Telefon;
+                lookUpEditDurum.EditValue = rezervasyon.Durum;
+                TxtAciklama.Text = rezervasyon.Aciklama;
+            }
+
         }
 
         private void BtnVazgec_Click(object sender, EventArgs e)
