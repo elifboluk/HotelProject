@@ -24,6 +24,9 @@ namespace OtelProject.Entity
         public string Telefon { get; set; }
         public string Aciklama { get; set; }
         public Nullable<int> Durum { get; set; }
+        public Nullable<int> Kisi1 { get; set; }
+        public Nullable<int> Kisi2 { get; set; }
+        public Nullable<int> Kisi3 { get; set; }
     
         public virtual TblDurum TblDurum { get; set; }
         public virtual TblMisafir TblMisafir { get; set; }
