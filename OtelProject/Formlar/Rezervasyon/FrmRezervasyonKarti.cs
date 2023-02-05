@@ -37,7 +37,7 @@ namespace OtelProject.Formlar.Rezervasyon
                                                         }).ToList();
 
             // Misafir Listesi 2
-            lookUpEditKisi2.Properties.DataSource = (from x in db.TblMisafir
+            lookUpEditKisi1.Properties.DataSource = (from x in db.TblMisafir
                                                        select new
                                                        {
                                                            x.MisafirID,
@@ -45,7 +45,7 @@ namespace OtelProject.Formlar.Rezervasyon
                                                        }).ToList();
 
             // Misafir Listesi 3
-            lookUpEditKisi3.Properties.DataSource = (from x in db.TblMisafir
+            lookUpEditKisi2.Properties.DataSource = (from x in db.TblMisafir
                                                        select new
                                                        {
                                                            x.MisafirID,
@@ -53,7 +53,7 @@ namespace OtelProject.Formlar.Rezervasyon
                                                        }).ToList();
 
             // Misafir Listesi 4
-            lookUpEditKisi4.Properties.DataSource = (from x in db.TblMisafir
+            lookUpEditKisi3.Properties.DataSource = (from x in db.TblMisafir
                                                        select new
                                                        {
                                                            x.MisafirID,
@@ -93,6 +93,9 @@ namespace OtelProject.Formlar.Rezervasyon
                 TxtTelefon.Text = rezervasyon.Telefon;
                 lookUpEditDurum.EditValue = rezervasyon.Durum;
                 TxtAciklama.Text = rezervasyon.Aciklama;
+                lookUpEditKisi1.EditValue = rezervasyon.Kisi1;
+                lookUpEditKisi2.EditValue = rezervasyon.Kisi2;
+                lookUpEditKisi3.EditValue = rezervasyon.Kisi3;
             }
 
         }
@@ -113,26 +116,26 @@ namespace OtelProject.Formlar.Rezervasyon
             if (numericUpDown1.Value == 2)
             {
                 t.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
-                t.Kisi1 = int.Parse(lookUpEditKisi2.EditValue.ToString());
+                t.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
             }
 
             if (numericUpDown1.Value == 3)
             {
                 t.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
-                t.Kisi1 = int.Parse(lookUpEditKisi2.EditValue.ToString());
-                t.Kisi2 = int.Parse(lookUpEditKisi3.EditValue.ToString());
+                t.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
+                t.Kisi2 = int.Parse(lookUpEditKisi2.EditValue.ToString());
             }
             if (numericUpDown1.Value == 4)
             {
                 t.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
-                t.Kisi1 = int.Parse(lookUpEditKisi2.EditValue.ToString());
-                t.Kisi2 = int.Parse(lookUpEditKisi3.EditValue.ToString());
-                t.Kisi3 = int.Parse(lookUpEditKisi4.EditValue.ToString());
+                t.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
+                t.Kisi2 = int.Parse(lookUpEditKisi2.EditValue.ToString());
+                t.Kisi3 = int.Parse(lookUpEditKisi3.EditValue.ToString());
             }
             t.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
-            t.Kisi1 = int.Parse(lookUpEditKisi2.EditValue.ToString());
-            t.Kisi2 = int.Parse(lookUpEditKisi3.EditValue.ToString());
-            t.Kisi3 = int.Parse(lookUpEditKisi4.EditValue.ToString());
+            t.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
+            t.Kisi2 = int.Parse(lookUpEditKisi2.EditValue.ToString());
+            t.Kisi3 = int.Parse(lookUpEditKisi3.EditValue.ToString());
             t.GirisTarih = DateTime.Parse(dateEditGiris.Text);
             t.CikisTarih = DateTime.Parse(dateEditCikis.Text);
             t.Kisi = numericUpDown1.Value.ToString();
