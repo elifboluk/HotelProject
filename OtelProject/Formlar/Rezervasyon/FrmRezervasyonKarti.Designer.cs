@@ -132,6 +132,7 @@
             this.lookUpEditMisafir.Properties.ValueMember = "MisafirID";
             this.lookUpEditMisafir.Size = new System.Drawing.Size(331, 20);
             this.lookUpEditMisafir.TabIndex = 16;
+            this.lookUpEditMisafir.EditValueChanged += new System.EventHandler(this.lookUpEditMisafir_EditValueChanged);
             // 
             // labelControl1
             // 

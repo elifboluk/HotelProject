@@ -147,5 +147,13 @@ namespace OtelProject.Formlar.Rezervasyon
             repo.TAdd(t);
             XtraMessageBox.Show("Rezervasyon başarılı bir şekilde oluşturuldu.");
         }
+
+        private void lookUpEditMisafir_EditValueChanged(object sender, EventArgs e)
+        {
+            int secilen;
+            secilen = int.Parse(lookUpEditMisafir.EditValue.ToString());
+            var telefon = db.TblMisafir.Where(x => x.MisafirID == secilen).Select(y => y.Telefon).FirstOrDefault();
+            TxtTelefon.Text = telefon.ToString();
+        }
     }
 }
