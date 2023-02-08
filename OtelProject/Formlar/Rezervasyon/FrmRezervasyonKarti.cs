@@ -30,56 +30,56 @@ namespace OtelProject.Formlar.Rezervasyon
 
             // Misafir Listesi
             lookUpEditMisafir.Properties.DataSource = (from x in db.TblMisafir
-                                                        select new
-                                                        {
-                                                            x.MisafirID,
-                                                            x.AdSoyad
-                                                        }).ToList();
+                                                       select new
+                                                       {
+                                                           x.MisafirID,
+                                                           x.AdSoyad
+                                                       }).ToList();
 
             // Misafir Listesi 2
             lookUpEditKisi1.Properties.DataSource = (from x in db.TblMisafir
-                                                       select new
-                                                       {
-                                                           x.MisafirID,
-                                                           x.AdSoyad
-                                                       }).ToList();
+                                                     select new
+                                                     {
+                                                         x.MisafirID,
+                                                         x.AdSoyad
+                                                     }).ToList();
 
             // Misafir Listesi 3
             lookUpEditKisi2.Properties.DataSource = (from x in db.TblMisafir
-                                                       select new
-                                                       {
-                                                           x.MisafirID,
-                                                           x.AdSoyad
-                                                       }).ToList();
+                                                     select new
+                                                     {
+                                                         x.MisafirID,
+                                                         x.AdSoyad
+                                                     }).ToList();
 
             // Misafir Listesi 4
             lookUpEditKisi3.Properties.DataSource = (from x in db.TblMisafir
-                                                       select new
-                                                       {
-                                                           x.MisafirID,
-                                                           x.AdSoyad
-                                                       }).ToList();
+                                                     select new
+                                                     {
+                                                         x.MisafirID,
+                                                         x.AdSoyad
+                                                     }).ToList();
 
 
 
 
             // Oda Listesi
             lookUpEditOda.Properties.DataSource = (from x in db.TblOda
-                                                        select new
-                                                        {
-                                                            x.OdaID,
-                                                            x.OdaNo,
-                                                            x.TblDurum.DurumAd
-                                                        }).Where(y=>y.DurumAd=="Aktif").ToList();
+                                                   select new
+                                                   {
+                                                       x.OdaID,
+                                                       x.OdaNo,
+                                                       x.TblDurum.DurumAd
+                                                   }).Where(y => y.DurumAd == "Aktif").ToList();
 
 
             // Durum Listesi
             lookUpEditDurum.Properties.DataSource = (from x in db.TblDurum
-                                                        select new
-                                                        {
-                                                            x.DurumID,
-                                                            x.DurumAd
-                                                        }).ToList();
+                                                     select new
+                                                     {
+                                                         x.DurumID,
+                                                         x.DurumAd
+                                                     }).ToList();
 
             // Ürün Güncelleme Alanı
             if (id != 0)
@@ -154,6 +154,49 @@ namespace OtelProject.Formlar.Rezervasyon
             secilen = int.Parse(lookUpEditMisafir.EditValue.ToString());
             var telefon = db.TblMisafir.Where(x => x.MisafirID == secilen).Select(y => y.Telefon).FirstOrDefault();
             TxtTelefon.Text = telefon.ToString();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            var rezervasyon = repo.Find(x => x.RezervasyonID == id);
+            rezervasyon.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
+            rezervasyon.GirisTarih = DateTime.Parse(dateEditGiris.Text);
+            rezervasyon.CikisTarih = DateTime.Parse(dateEditCikis.Text);
+            rezervasyon.Kisi = numericUpDown1.Value.ToString();
+            rezervasyon.Oda = int.Parse(lookUpEditOda.EditValue.ToString());
+            rezervasyon.Telefon = TxtTelefon.Text;
+            rezervasyon.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
+            if (numericUpDown1.Value == 1)
+            {
+                rezervasyon.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
+            }
+
+            if (numericUpDown1.Value == 2)
+            {
+                rezervasyon.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
+                rezervasyon.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
+            }
+
+            if (numericUpDown1.Value == 3)
+            {
+                rezervasyon.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
+                rezervasyon.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
+                rezervasyon.Kisi2 = int.Parse(lookUpEditKisi2.EditValue.ToString());
+            }
+
+            if (numericUpDown1.Value == 4)
+            {
+                rezervasyon.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
+                rezervasyon.Kisi1 = int.Parse(lookUpEditKisi1.EditValue.ToString());
+                rezervasyon.Kisi2 = int.Parse(lookUpEditKisi2.EditValue.ToString());
+                rezervasyon.Kisi3 = int.Parse(lookUpEditKisi3.EditValue.ToString());
+            }
+
+            
+            rezervasyon.Aciklama = TxtAciklama.Text;
+
+            repo.TUpdate(rezervasyon);
+            XtraMessageBox.Show("Ürün başarılı bir şekilde güncellendi.");
         }
     }
 }
