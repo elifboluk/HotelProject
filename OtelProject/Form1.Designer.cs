@@ -66,6 +66,7 @@
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -85,7 +86,9 @@
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.BtnYeniKayitlar = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -131,9 +134,10 @@
             this.barButtonItem9,
             this.barButtonItem10,
             this.barButtonItem11,
-            this.BtnHesapMakinesi});
+            this.BtnHesapMakinesi,
+            this.BtnYeniKayitlar});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 37;
+            this.ribbonControl1.MaxItemId = 38;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -142,7 +146,8 @@
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6,
-            this.ribbonPage7});
+            this.ribbonPage7,
+            this.ribbonPage8});
             this.ribbonControl1.Size = new System.Drawing.Size(884, 150);
             // 
             // barButtonItem1
@@ -386,8 +391,8 @@
             // 
             this.BtnKurlar.Caption = "Kurlar";
             this.BtnKurlar.Id = 28;
-            this.BtnKurlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.BtnKurlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.BtnKurlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKurlar.ImageOptions.Image")));
+            this.BtnKurlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnKurlar.ImageOptions.LargeImage")));
             this.BtnKurlar.Name = "BtnKurlar";
             this.BtnKurlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnKurlar_ItemClick);
             // 
@@ -395,8 +400,8 @@
             // 
             this.BtnYoutube.Caption = "Youtube";
             this.BtnYoutube.Id = 29;
-            this.BtnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.BtnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.BtnYoutube.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnYoutube.ImageOptions.Image")));
+            this.BtnYoutube.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnYoutube.ImageOptions.LargeImage")));
             this.BtnYoutube.Name = "BtnYoutube";
             this.BtnYoutube.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYoutube_ItemClick);
             // 
@@ -404,8 +409,8 @@
             // 
             this.BtnGoogle.Caption = "Google";
             this.BtnGoogle.Id = 30;
-            this.BtnGoogle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.BtnGoogle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.BtnGoogle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGoogle.ImageOptions.Image")));
+            this.BtnGoogle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGoogle.ImageOptions.LargeImage")));
             this.BtnGoogle.Name = "BtnGoogle";
             this.BtnGoogle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGoogle_ItemClick);
             // 
@@ -413,8 +418,8 @@
             // 
             this.BtnWord.Caption = "Word";
             this.BtnWord.Id = 31;
-            this.BtnWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.BtnWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.BtnWord.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnWord.ImageOptions.Image")));
+            this.BtnWord.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnWord.ImageOptions.LargeImage")));
             this.BtnWord.Name = "BtnWord";
             this.BtnWord.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnWord_ItemClick);
             // 
@@ -422,8 +427,8 @@
             // 
             this.BtnExcel.Caption = "Excel";
             this.BtnExcel.Id = 32;
-            this.BtnExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
-            this.BtnExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
+            this.BtnExcel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnExcel.ImageOptions.Image")));
+            this.BtnExcel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnExcel.ImageOptions.LargeImage")));
             this.BtnExcel.Name = "BtnExcel";
             this.BtnExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnExcel_ItemClick);
             // 
@@ -450,6 +455,15 @@
             this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
             this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
             this.barButtonItem11.Name = "barButtonItem11";
+            // 
+            // BtnHesapMakinesi
+            // 
+            this.BtnHesapMakinesi.Caption = "Hesap Makinesi";
+            this.BtnHesapMakinesi.Id = 36;
+            this.BtnHesapMakinesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnHesapMakinesi.ImageOptions.Image")));
+            this.BtnHesapMakinesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnHesapMakinesi.ImageOptions.LargeImage")));
+            this.BtnHesapMakinesi.Name = "BtnHesapMakinesi";
+            this.BtnHesapMakinesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHesapMakinesi_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -591,14 +605,26 @@
             this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
             this.barButtonItem3.Name = "barButtonItem3";
             // 
-            // BtnHesapMakinesi
+            // ribbonPage8
             // 
-            this.BtnHesapMakinesi.Caption = "Hesap Makinesi";
-            this.BtnHesapMakinesi.Id = 36;
-            this.BtnHesapMakinesi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image1")));
-            this.BtnHesapMakinesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage1")));
-            this.BtnHesapMakinesi.Name = "BtnHesapMakinesi";
-            this.BtnHesapMakinesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHesapMakinesi_ItemClick);
+            this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup11});
+            this.ribbonPage8.Name = "ribbonPage8";
+            this.ribbonPage8.Text = "Web Site";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.BtnYeniKayitlar);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            // 
+            // BtnYeniKayitlar
+            // 
+            this.BtnYeniKayitlar.Caption = "Yeni Kayıtlar";
+            this.BtnYeniKayitlar.Id = 37;
+            this.BtnYeniKayitlar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.BtnYeniKayitlar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.BtnYeniKayitlar.Name = "BtnYeniKayitlar";
+            this.BtnYeniKayitlar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniKayitlar_ItemClick);
             // 
             // Form1
             // 
@@ -677,6 +703,9 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.BarButtonItem BtnHesapMakinesi;
+        private DevExpress.XtraBars.BarButtonItem BtnYeniKayitlar;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage8;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
     }
 }
 

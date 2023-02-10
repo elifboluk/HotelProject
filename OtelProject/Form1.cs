@@ -219,5 +219,12 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnYeniKayitlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmYeniKayit fr = new Formlar.WebSite.FrmYeniKayit();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
