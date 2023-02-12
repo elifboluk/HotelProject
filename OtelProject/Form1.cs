@@ -226,5 +226,13 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void btnOnRezervasyonlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmOnRezervasyon fr = new Formlar.WebSite.FrmOnRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+
+        }
     }
 }
