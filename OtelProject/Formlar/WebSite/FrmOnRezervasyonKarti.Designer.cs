@@ -37,8 +37,8 @@
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEditDurum = new DevExpress.XtraEditors.LookUpEdit();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtAdSoyad = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -53,12 +53,12 @@
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.dateEditTarih = new DevExpress.XtraEditors.DateEdit();
             this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+            this.TxtMail = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
@@ -66,9 +66,9 @@
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDurum.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad)).BeginInit();
+            this.TxtAdSoyad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -81,13 +81,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTarih.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTarih.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit3
@@ -121,6 +121,7 @@
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 0;
             this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // groupControl6
             // 
@@ -170,29 +171,25 @@
             this.labelControl3.TabIndex = 28;
             this.labelControl3.Text = "Mail";
             // 
-            // lookUpEditDurum
+            // TxtAdSoyad
             // 
-            this.lookUpEditDurum.Location = new System.Drawing.Point(336, 9);
-            this.lookUpEditDurum.Name = "lookUpEditDurum";
-            this.lookUpEditDurum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEditDurum.Properties.DisplayMember = "DurumAd";
-            this.lookUpEditDurum.Properties.NullText = "Durum Seçiniz";
-            this.lookUpEditDurum.Properties.ValueMember = "DurumID";
-            this.lookUpEditDurum.Size = new System.Drawing.Size(110, 20);
-            this.lookUpEditDurum.TabIndex = 26;
+            this.TxtAdSoyad.Controls.Add(this.textEdit1);
+            this.TxtAdSoyad.Controls.Add(this.labelControl1);
+            this.TxtAdSoyad.Controls.Add(this.pictureEdit1);
+            this.TxtAdSoyad.Location = new System.Drawing.Point(12, 12);
+            this.TxtAdSoyad.Name = "TxtAdSoyad";
+            this.TxtAdSoyad.ShowCaption = false;
+            this.TxtAdSoyad.Size = new System.Drawing.Size(470, 42);
+            this.TxtAdSoyad.TabIndex = 38;
+            this.TxtAdSoyad.Text = "groupControl1";
             // 
-            // groupControl1
+            // textEdit1
             // 
-            this.groupControl1.Controls.Add(this.textEdit1);
-            this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Controls.Add(this.pictureEdit1);
-            this.groupControl1.Location = new System.Drawing.Point(12, 12);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(470, 42);
-            this.groupControl1.TabIndex = 38;
-            this.groupControl1.Text = "groupControl1";
+            this.textEdit1.EditValue = "";
+            this.textEdit1.Location = new System.Drawing.Point(116, 9);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(331, 20);
+            this.textEdit1.TabIndex = 3;
             // 
             // labelControl1
             // 
@@ -332,7 +329,7 @@
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.dateEdit1);
+            this.groupControl2.Controls.Add(this.dateEditTarih);
             this.groupControl2.Controls.Add(this.numericUpDown1);
             this.groupControl2.Controls.Add(this.pictureEdit2);
             this.groupControl2.Controls.Add(this.dateEditCikis);
@@ -350,6 +347,18 @@
             this.groupControl2.Size = new System.Drawing.Size(470, 67);
             this.groupControl2.TabIndex = 39;
             this.groupControl2.Text = "groupControl2";
+            // 
+            // dateEditTarih
+            // 
+            this.dateEditTarih.EditValue = null;
+            this.dateEditTarih.Location = new System.Drawing.Point(337, 35);
+            this.dateEditTarih.Name = "dateEditTarih";
+            this.dateEditTarih.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditTarih.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEditTarih.Size = new System.Drawing.Size(110, 20);
+            this.dateEditTarih.TabIndex = 44;
             // 
             // pictureEdit12
             // 
@@ -374,9 +383,9 @@
             // 
             // groupControl3
             // 
+            this.groupControl3.Controls.Add(this.TxtMail);
             this.groupControl3.Controls.Add(this.labelControl3);
             this.groupControl3.Controls.Add(this.pictureEdit3);
-            this.groupControl3.Controls.Add(this.lookUpEditDurum);
             this.groupControl3.Controls.Add(this.labelControl11);
             this.groupControl3.Controls.Add(this.pictureEdit12);
             this.groupControl3.Controls.Add(this.TxtTelefon);
@@ -395,25 +404,13 @@
             this.labelControl11.TabIndex = 4;
             this.labelControl11.Text = "Telefon";
             // 
-            // textEdit1
+            // TxtMail
             // 
-            this.textEdit1.EditValue = "";
-            this.textEdit1.Location = new System.Drawing.Point(116, 9);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(331, 20);
-            this.textEdit1.TabIndex = 3;
-            // 
-            // dateEdit1
-            // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(337, 35);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(110, 20);
-            this.dateEdit1.TabIndex = 44;
+            this.TxtMail.EditValue = "";
+            this.TxtMail.Location = new System.Drawing.Point(336, 9);
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Size = new System.Drawing.Size(110, 20);
+            this.TxtMail.TabIndex = 29;
             // 
             // FrmOnRezervasyonKarti
             // 
@@ -422,10 +419,13 @@
             this.ClientSize = new System.Drawing.Size(494, 363);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl6);
-            this.Controls.Add(this.groupControl1);
+            this.Controls.Add(this.TxtAdSoyad);
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.groupControl3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmOnRezervasyonKarti";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ön Rezervasyon Kartı";
             this.Load += new System.EventHandler(this.FrmOnRezervasyonKarti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
@@ -436,10 +436,10 @@
             this.groupControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditDurum.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad)).EndInit();
+            this.TxtAdSoyad.ResumeLayout(false);
+            this.TxtAdSoyad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
@@ -453,14 +453,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTarih.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTarih.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit12.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -475,8 +475,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEditDurum;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.GroupControl TxtAdSoyad;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
@@ -492,10 +491,11 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
+        private DevExpress.XtraEditors.DateEdit dateEditTarih;
         private DevExpress.XtraEditors.PictureEdit pictureEdit12;
         private DevExpress.XtraEditors.TextEdit TxtTelefon;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.TextEdit TxtMail;
     }
 }

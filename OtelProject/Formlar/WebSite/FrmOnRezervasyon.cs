@@ -25,6 +25,7 @@ namespace OtelProject.Formlar.WebSite
             gridControl1.DataSource = (from x in db.TblOnRezervasyon
                                        select new
                                        {
+                                           x.ID,
                                            x.AdSoyad,
                                            x.Mail,
                                            x.Telefon,
