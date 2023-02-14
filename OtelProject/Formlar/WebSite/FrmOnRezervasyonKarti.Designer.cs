@@ -57,8 +57,10 @@
             this.pictureEdit12 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.TxtMail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
@@ -105,6 +107,8 @@
             // 
             // groupControl4
             // 
+            this.groupControl4.Controls.Add(this.BtnGuncelle);
+            this.groupControl4.Controls.Add(this.BtnKaydet);
             this.groupControl4.Controls.Add(this.BtnVazgec);
             this.groupControl4.Location = new System.Drawing.Point(12, 316);
             this.groupControl4.Name = "groupControl4";
@@ -396,14 +400,6 @@
             this.groupControl3.TabIndex = 40;
             this.groupControl3.Text = "groupControl3";
             // 
-            // labelControl11
-            // 
-            this.labelControl11.Location = new System.Drawing.Point(41, 12);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(36, 13);
-            this.labelControl11.TabIndex = 4;
-            this.labelControl11.Text = "Telefon";
-            // 
             // TxtMail
             // 
             this.TxtMail.EditValue = "";
@@ -412,11 +408,37 @@
             this.TxtMail.Size = new System.Drawing.Size(110, 20);
             this.TxtMail.TabIndex = 29;
             // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(41, 12);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(36, 13);
+            this.labelControl11.TabIndex = 4;
+            this.labelControl11.Text = "Telefon";
+            // 
+            // BtnGuncelle
+            // 
+            this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
+            this.BtnGuncelle.Location = new System.Drawing.Point(116, 5);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
+            this.BtnGuncelle.TabIndex = 4;
+            this.BtnGuncelle.Text = "Güncelle";
+            // 
+            // BtnKaydet
+            // 
+            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
+            this.BtnKaydet.Location = new System.Drawing.Point(225, 5);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(112, 30);
+            this.BtnKaydet.TabIndex = 3;
+            this.BtnKaydet.Text = "Kaydet";
+            // 
             // FrmOnRezervasyonKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 363);
+            this.ClientSize = new System.Drawing.Size(494, 361);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl6);
             this.Controls.Add(this.TxtAdSoyad);
@@ -497,5 +519,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.TextEdit TxtMail;
+        private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
+        private DevExpress.XtraEditors.SimpleButton BtnKaydet;
     }
 }
