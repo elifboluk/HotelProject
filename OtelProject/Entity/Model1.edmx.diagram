@@ -48,6 +48,11 @@
         <AssociationConnector Association="DbOtelModel.FK_TblRezervasyon_TblOda" />
         <EntityTypeShape EntityType="DbOtelModel.TblYeniKayit" Width="1.5" PointX="5.375" PointY="6.75" />
         <EntityTypeShape EntityType="DbOtelModel.TblOnRezervasyon" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DbOtelModel.TblMesaj2" Width="1.5" PointX="7.375" PointY="4.75" />
+        <EntityTypeShape EntityType="DbOtelModel.TblEkibimiz" Width="1.5" PointX="9.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DbOtelModel.Tbliletisim" Width="1.5" PointX="9.375" PointY="3.75" />
+        <EntityTypeShape EntityType="DbOtelModel.TblMesaj" Width="1.5" PointX="9.375" PointY="6.75" />
+        <EntityTypeShape EntityType="DbOtelModel.TblHakkimda" Width="1.5" PointX="10.375" PointY="9.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

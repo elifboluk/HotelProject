@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace OtelProject.Formlar.WebSite
         public FrmGelenMesajlar()
         {
             InitializeComponent();
+        }
+        DbOtelEntities db = new DbOtelEntities();
+
+        private void FrmGelenMesajlar_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = (from x in db.TblMesaj2
+                                       select new
+                                       {
+                                           x.MesajID,
+                                           x.Gonderen,
+                                           x.Konu,
+                                           x.Tarih,
+                                           x.Alici
+                                       }).Where(x => x.Alici == "Admin").ToList();
         }
     }
 }
