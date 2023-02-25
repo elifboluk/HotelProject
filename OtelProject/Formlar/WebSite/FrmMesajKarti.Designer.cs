@@ -282,7 +282,10 @@
             this.Controls.Add(this.groupControl6);
             this.Controls.Add(this.TxtAdSoyad);
             this.Controls.Add(this.groupControl3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmMesajKarti";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesaj Kartı";
             this.Load += new System.EventHandler(this.FrmMesajKarti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
