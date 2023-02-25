@@ -1,4 +1,5 @@
-﻿using OtelProject.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
 using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,7 @@ namespace OtelProject.Formlar.WebSite
             {
                 var mesaj = repo.Find(x => x.MesajID == id);
 
-                TxtGonderenMail.Text = mesaj.Gonderen;
+                TxtMail.Text = mesaj.Gonderen;
                 TxtKonu.Text = mesaj.Konu;
                 TxtMesaj.Text = mesaj.Mesaj;
                 TxtTarih.Text = mesaj.Tarih.ToString();
@@ -42,6 +43,18 @@ namespace OtelProject.Formlar.WebSite
                 TxtAdSoyad.Text = kisi.ToString();
 
             }
+        }
+
+        private void BtnGonder_Click(object sender, EventArgs e)
+        {
+            TblMesaj2 t = new TblMesaj2();
+            t.Gonderen = "Admin";
+            t.Alici = TxtMail.Text;
+            t.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+            t.Konu = TxtKonu.Text;
+            t.Mesaj = TxtMesaj.Text;
+            repo.TAdd(t);
+            XtraMessageBox.Show("Mesajınız başarılı bir şekilde iletildi.");
         }
     }
 }

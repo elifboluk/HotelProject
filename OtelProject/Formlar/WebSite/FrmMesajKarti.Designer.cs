@@ -34,7 +34,7 @@
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtAdSoyad = new DevExpress.XtraEditors.GroupControl();
-            this.TxtGonderenMail = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
@@ -55,7 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad)).BeginInit();
             this.TxtAdSoyad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtGonderenMail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -112,7 +112,7 @@
             this.TxtAdSoyad.Controls.Add(this.TxtTarih);
             this.TxtAdSoyad.Controls.Add(this.pictureEdit2);
             this.TxtAdSoyad.Controls.Add(this.labelControl2);
-            this.TxtAdSoyad.Controls.Add(this.TxtGonderenMail);
+            this.TxtAdSoyad.Controls.Add(this.TxtMail);
             this.TxtAdSoyad.Controls.Add(this.labelControl1);
             this.TxtAdSoyad.Controls.Add(this.pictureEdit3);
             this.TxtAdSoyad.Location = new System.Drawing.Point(12, 31);
@@ -122,21 +122,21 @@
             this.TxtAdSoyad.TabIndex = 42;
             this.TxtAdSoyad.Text = "groupControl1";
             // 
-            // TxtGonderenMail
+            // TxtMail
             // 
-            this.TxtGonderenMail.EditValue = "";
-            this.TxtGonderenMail.Location = new System.Drawing.Point(116, 9);
-            this.TxtGonderenMail.Name = "TxtGonderenMail";
-            this.TxtGonderenMail.Size = new System.Drawing.Size(110, 20);
-            this.TxtGonderenMail.TabIndex = 3;
+            this.TxtMail.EditValue = "";
+            this.TxtMail.Location = new System.Drawing.Point(116, 9);
+            this.TxtMail.Name = "TxtMail";
+            this.TxtMail.Size = new System.Drawing.Size(110, 20);
+            this.TxtMail.TabIndex = 3;
             // 
             // labelControl1
             // 
             this.labelControl1.Location = new System.Drawing.Point(41, 12);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(68, 13);
+            this.labelControl1.Size = new System.Drawing.Size(18, 13);
             this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Gönderen Mail";
+            this.labelControl1.Text = "Mail";
             // 
             // pictureEdit3
             // 
@@ -242,6 +242,7 @@
             this.BtnGonder.Size = new System.Drawing.Size(103, 30);
             this.BtnGonder.TabIndex = 46;
             this.BtnGonder.Text = "Gönder";
+            this.BtnGonder.Click += new System.EventHandler(this.BtnGonder_Click);
             // 
             // TxtTarih
             // 
@@ -296,7 +297,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad)).EndInit();
             this.TxtAdSoyad.ResumeLayout(false);
             this.TxtAdSoyad.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtGonderenMail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -318,7 +319,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.GroupControl TxtAdSoyad;
-        private DevExpress.XtraEditors.TextEdit TxtGonderenMail;
+        private DevExpress.XtraEditors.TextEdit TxtMail;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.GroupControl groupControl3;
