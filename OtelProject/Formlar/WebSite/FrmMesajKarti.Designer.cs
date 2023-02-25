@@ -46,6 +46,9 @@
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGonder = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtTarih = new DevExpress.XtraEditors.TextEdit();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMesaj.Properties)).BeginInit();
@@ -60,6 +63,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtGonAdSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl6
@@ -104,6 +109,9 @@
             // 
             // TxtAdSoyad
             // 
+            this.TxtAdSoyad.Controls.Add(this.TxtTarih);
+            this.TxtAdSoyad.Controls.Add(this.pictureEdit2);
+            this.TxtAdSoyad.Controls.Add(this.labelControl2);
             this.TxtAdSoyad.Controls.Add(this.TxtGonderenMail);
             this.TxtAdSoyad.Controls.Add(this.labelControl1);
             this.TxtAdSoyad.Controls.Add(this.pictureEdit3);
@@ -119,7 +127,7 @@
             this.TxtGonderenMail.EditValue = "";
             this.TxtGonderenMail.Location = new System.Drawing.Point(116, 9);
             this.TxtGonderenMail.Name = "TxtGonderenMail";
-            this.TxtGonderenMail.Size = new System.Drawing.Size(331, 20);
+            this.TxtGonderenMail.Size = new System.Drawing.Size(110, 20);
             this.TxtGonderenMail.TabIndex = 3;
             // 
             // labelControl1
@@ -235,6 +243,35 @@
             this.BtnGonder.TabIndex = 46;
             this.BtnGonder.Text = "Gönder";
             // 
+            // TxtTarih
+            // 
+            this.TxtTarih.EditValue = "";
+            this.TxtTarih.Location = new System.Drawing.Point(336, 9);
+            this.TxtTarih.Name = "TxtTarih";
+            this.TxtTarih.Size = new System.Drawing.Size(110, 20);
+            this.TxtTarih.TabIndex = 32;
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(243, 9);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit2.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit2.TabIndex = 30;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(269, 12);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(24, 13);
+            this.labelControl2.TabIndex = 31;
+            this.labelControl2.Text = "Tarih";
+            // 
             // FrmMesajKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +284,7 @@
             this.Controls.Add(this.groupControl3);
             this.Name = "FrmMesajKarti";
             this.Text = "Mesaj Kartı";
+            this.Load += new System.EventHandler(this.FrmMesajKarti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
             this.groupControl6.PerformLayout();
@@ -264,6 +302,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtGonAdSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtTarih.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,5 +327,8 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.SimpleButton BtnGonder;
         private DevExpress.XtraEditors.TextEdit TxtGonAdSoyad;
+        private DevExpress.XtraEditors.TextEdit TxtTarih;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }

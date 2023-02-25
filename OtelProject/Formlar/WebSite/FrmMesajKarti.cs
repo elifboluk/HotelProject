@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using OtelProject.Repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +18,26 @@ namespace OtelProject.Formlar.WebSite
         {
             InitializeComponent();
         }
+        DbOtelEntities db = new DbOtelEntities();
+        Repository<TblMesaj2> repo = new Repository<TblMesaj2>();
 
         public int id;
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmMesajKarti_Load(object sender, EventArgs e)
+        {
+            if (id != 0)
+            {
+                var mesaj = repo.Find(x => x.MesajID == id);
+                TxtGonderenMail.Text = mesaj.Gonderen;
+                TxtKonu.Text = mesaj.Konu;
+                TxtMesaj.Text = mesaj.Mesaj;
+                TxtTarih.Text = mesaj.Tarih.ToString();
+
+            }
         }
     }
 }
