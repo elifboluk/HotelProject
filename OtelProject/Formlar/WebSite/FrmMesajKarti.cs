@@ -32,10 +32,14 @@ namespace OtelProject.Formlar.WebSite
             if (id != 0)
             {
                 var mesaj = repo.Find(x => x.MesajID == id);
+
                 TxtGonderenMail.Text = mesaj.Gonderen;
                 TxtKonu.Text = mesaj.Konu;
                 TxtMesaj.Text = mesaj.Mesaj;
                 TxtTarih.Text = mesaj.Tarih.ToString();
+
+                var kisi = db.TblYeniKayit.Where(x => x.Mail == mesaj.Gonderen).Select(y => y.AdSoyad).FirstOrDefault();
+                TxtAdSoyad.Text = kisi.ToString();
 
             }
         }
