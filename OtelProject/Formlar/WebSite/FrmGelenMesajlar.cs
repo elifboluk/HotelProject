@@ -31,5 +31,12 @@ namespace OtelProject.Formlar.WebSite
                                            x.Alici
                                        }).Where(x => x.Alici == "Admin").ToList();
         }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmMesajKarti fr = new FrmMesajKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("MesajID").ToString());
+            fr.Show();
+        }
     }
 }

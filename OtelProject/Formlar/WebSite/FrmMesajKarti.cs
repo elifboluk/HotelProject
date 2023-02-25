@@ -16,5 +16,11 @@ namespace OtelProject.Formlar.WebSite
         {
             InitializeComponent();
         }
+
+        public int id;
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

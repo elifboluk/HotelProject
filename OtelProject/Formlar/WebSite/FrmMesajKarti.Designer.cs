@@ -39,13 +39,13 @@
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.TxtGonAdSoyad = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtKonu = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGonder = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtGonAdSoyad = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMesaj.Properties)).BeginInit();
@@ -57,9 +57,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGonAdSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtGonAdSoyad.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl6
@@ -171,6 +171,14 @@
             this.groupControl3.TabIndex = 43;
             this.groupControl3.Text = "groupControl3";
             // 
+            // TxtGonAdSoyad
+            // 
+            this.TxtGonAdSoyad.EditValue = "";
+            this.TxtGonAdSoyad.Location = new System.Drawing.Point(116, 9);
+            this.TxtGonAdSoyad.Name = "TxtGonAdSoyad";
+            this.TxtGonAdSoyad.Size = new System.Drawing.Size(110, 20);
+            this.TxtGonAdSoyad.TabIndex = 47;
+            // 
             // pictureEdit4
             // 
             this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
@@ -216,23 +224,16 @@
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 45;
             this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // BtnGonder
             // 
-            this.BtnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
+            this.BtnGonder.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGonder.ImageOptions.Image")));
             this.BtnGonder.Location = new System.Drawing.Point(244, 319);
             this.BtnGonder.Name = "BtnGonder";
             this.BtnGonder.Size = new System.Drawing.Size(103, 30);
             this.BtnGonder.TabIndex = 46;
             this.BtnGonder.Text = "Gönder";
-            // 
-            // TxtGonAdSoyad
-            // 
-            this.TxtGonAdSoyad.EditValue = "";
-            this.TxtGonAdSoyad.Location = new System.Drawing.Point(116, 9);
-            this.TxtGonAdSoyad.Name = "TxtGonAdSoyad";
-            this.TxtGonAdSoyad.Size = new System.Drawing.Size(110, 20);
-            this.TxtGonAdSoyad.TabIndex = 47;
             // 
             // FrmMesajKarti
             // 
@@ -260,9 +261,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtGonAdSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKonu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtGonAdSoyad.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
