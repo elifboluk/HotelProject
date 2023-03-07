@@ -355,6 +355,12 @@
     <Compile Include="Formlar\WebSite\FrmGelenMesajlar.Designer.cs">
       <DependentUpon>FrmGelenMesajlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\WebSite\FrmGidenMesajlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmGidenMesajlar.Designer.cs">
+      <DependentUpon>FrmGidenMesajlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\WebSite\FrmMesajKarti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -472,6 +478,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\WebSite\FrmGelenMesajlar.resx">
       <DependentUpon>FrmGelenMesajlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmGidenMesajlar.resx">
+      <DependentUpon>FrmGidenMesajlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\WebSite\FrmMesajKarti.resx">
       <DependentUpon>FrmMesajKarti.cs</DependentUpon>
