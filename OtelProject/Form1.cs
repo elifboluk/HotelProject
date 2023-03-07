@@ -246,5 +246,12 @@ namespace OtelProject
             Formlar.WebSite.FrmMesajKarti fr = new Formlar.WebSite.FrmMesajKarti();
             fr.Show();
         }
+
+        private void BtnGidenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmGidenMesajlar fr = new Formlar.WebSite.FrmGidenMesajlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
