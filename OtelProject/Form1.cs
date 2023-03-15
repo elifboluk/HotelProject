@@ -253,5 +253,13 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void Btniletisim_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.Frmiletisim fr = new Formlar.WebSite.Frmiletisim();
+            fr.MdiParent = this;
+            fr.Show();
+
+        }
     }
 }

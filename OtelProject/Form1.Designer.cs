@@ -72,6 +72,7 @@
             this.BtnGelenMesajlar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnGidenMesajlar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnYeniMesaj = new DevExpress.XtraBars.BarButtonItem();
+            this.Btniletisim = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -92,6 +93,7 @@
             this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
@@ -144,9 +146,10 @@
             this.btnOnRezervasyonlar,
             this.BtnGelenMesajlar,
             this.BtnGidenMesajlar,
-            this.BtnYeniMesaj});
+            this.BtnYeniMesaj,
+            this.Btniletisim});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 42;
+            this.ribbonControl1.MaxItemId = 43;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -523,6 +526,15 @@
             this.BtnYeniMesaj.Name = "BtnYeniMesaj";
             this.BtnYeniMesaj.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniMesaj_ItemClick);
             // 
+            // Btniletisim
+            // 
+            this.Btniletisim.Caption = "İletişim Kutusu";
+            this.Btniletisim.Id = 42;
+            this.Btniletisim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btniletisim.ImageOptions.Image")));
+            this.Btniletisim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Btniletisim.ImageOptions.LargeImage")));
+            this.Btniletisim.Name = "Btniletisim";
+            this.Btniletisim.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btniletisim_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -655,7 +667,8 @@
             // 
             this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup11,
-            this.ribbonPageGroup12});
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13});
             this.ribbonPage8.Name = "ribbonPage8";
             this.ribbonPage8.Text = "Web Site";
             // 
@@ -671,6 +684,11 @@
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnGidenMesajlar);
             this.ribbonPageGroup12.ItemLinks.Add(this.BtnYeniMesaj);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.Btniletisim);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
             // xtraTabbedMdiManager1
             // 
@@ -769,6 +787,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
         private DevExpress.XtraBars.BarButtonItem BtnGidenMesajlar;
         private DevExpress.XtraBars.BarButtonItem BtnYeniMesaj;
+        private DevExpress.XtraBars.BarButtonItem Btniletisim;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
     }
 }
 
