@@ -40,7 +40,14 @@ namespace OtelProject.Formlar.WebSite
                 TxtTarih.Text = mesaj.Tarih.ToString();
 
                 var kisi = db.TblYeniKayit.Where(x => x.Mail == mesaj.Gonderen).Select(y => y.AdSoyad).FirstOrDefault();
-                TxtAdSoyad.Text = kisi.ToString();
+                if (kisi != null)
+                {
+                    TxtAdSoyad.Text = kisi.ToString();
+                }
+                else
+                {
+                    TxtAdSoyad.Text = "Admin";
+                }
 
             }
         }
