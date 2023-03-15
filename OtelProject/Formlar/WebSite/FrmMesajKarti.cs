@@ -21,8 +21,10 @@ namespace OtelProject.Formlar.WebSite
         }
         DbOtelEntities db = new DbOtelEntities();
         Repository<TblMesaj2> repo = new Repository<TblMesaj2>();
+        Repository<TblMesaj> repoiletisim = new Repository<TblMesaj>();
 
         public int id;
+        public int id2;
         private void BtnVazgec_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -30,6 +32,16 @@ namespace OtelProject.Formlar.WebSite
 
         private void FrmMesajKarti_Load(object sender, EventArgs e)
         {
+            if (id2 != 0)
+            {
+                var mesaj = repoiletisim.Find(x => x.MesajID == id2);
+
+                TxtMail.Text = mesaj.Gonderen;
+                TxtKonu.Text = mesaj.Konu;
+                TxtMesaj.Text = mesaj.Mesaj;
+                TxtMesaj.Text = mesaj.Gonderen;
+            }
+
             if (id != 0)
             {
                 var mesaj = repo.Find(x => x.MesajID == id);
@@ -48,7 +60,6 @@ namespace OtelProject.Formlar.WebSite
                 {
                     TxtAdSoyad.Text = "Admin";
                 }
-
             }
         }
 
@@ -65,3 +76,4 @@ namespace OtelProject.Formlar.WebSite
         }
     }
 }
+

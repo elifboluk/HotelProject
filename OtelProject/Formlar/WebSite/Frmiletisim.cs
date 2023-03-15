@@ -22,7 +22,7 @@ namespace OtelProject.Formlar.WebSite
         private void gridView1_DoubleClick(object sender, EventArgs e)
         {
             FrmMesajKarti fr = new FrmMesajKarti();
-            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("MesajID").ToString());
+            fr.id2 = int.Parse(gridView1.GetFocusedRowCellValue("MesajID").ToString());
             fr.Show();
         }
 
@@ -37,7 +37,8 @@ namespace OtelProject.Formlar.WebSite
                                            x.Konu,
                                            x.Mesaj
                                        }).ToList();
-
         }
+
+        
     }
 }

@@ -60,6 +60,7 @@
             this.Controls.Add(this.gridControl1);
             this.Name = "Frmiletisim";
             this.Text = "İletişim Formu";
+            this.Load += new System.EventHandler(this.Frmiletisim_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
