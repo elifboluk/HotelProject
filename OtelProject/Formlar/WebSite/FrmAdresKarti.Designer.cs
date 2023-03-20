@@ -1,6 +1,6 @@
 ﻿namespace OtelProject.Formlar.WebSite
 {
-    partial class FrmiletisimKarti
+    partial class FrmAdresKarti
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmiletisimKarti));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdresKarti));
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtMail = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -175,7 +175,7 @@
             // BtnVazgec
             // 
             this.BtnVazgec.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnVazgec.ImageOptions.Image")));
-            this.BtnVazgec.Location = new System.Drawing.Point(378, 444);
+            this.BtnVazgec.Location = new System.Drawing.Point(378, 432);
             this.BtnVazgec.Name = "BtnVazgec";
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 50;
@@ -276,7 +276,7 @@
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-            this.BtnGuncelle.Location = new System.Drawing.Point(255, 444);
+            this.BtnGuncelle.Location = new System.Drawing.Point(255, 432);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
             this.BtnGuncelle.TabIndex = 53;
@@ -286,14 +286,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 486);
+            this.ClientSize = new System.Drawing.Size(494, 468);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.BtnVazgec);
             this.Controls.Add(this.TxtAdSoyad);
             this.Controls.Add(this.groupControl6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmiletisimKarti";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İletişim Kartı";
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OtelProject.Formlar.WebSite
 {
-    public partial class FrmiletisimKarti : Form
+    public partial class FrmAdresKarti : Form
     {
-        public FrmiletisimKarti()
+        public FrmAdresKarti()
         {
             InitializeComponent();
         }
