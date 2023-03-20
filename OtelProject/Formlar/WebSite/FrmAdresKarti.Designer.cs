@@ -180,6 +180,7 @@
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 50;
             this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // TxtAdSoyad
             // 
@@ -273,6 +274,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
             this.BtnGuncelle.TabIndex = 53;
             this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // labelControl2
             // 

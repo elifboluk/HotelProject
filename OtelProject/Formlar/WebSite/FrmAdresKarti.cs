@@ -1,4 +1,5 @@
-﻿using OtelProject.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
 using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,24 @@ namespace OtelProject.Formlar.WebSite
             TxtKoordinat.Text = iletisim.Koordinat;
             TxtAdres.Text = iletisim.Adres;
             TxtAciklama.Text = iletisim.Aciklama;            
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            var iletisim = repo.Find(x => x.ID == 1);
+            iletisim.Mail = TxtMail.Text;
+            iletisim.Telefon = TxtTelefon.Text;
+            iletisim.Aciklama = TxtAciklama.Text;
+            iletisim.Koordinat = TxtKoordinat.Text;
+            iletisim.Adres = TxtAdres.Text;
+            
+            repo.TUpdate(iletisim);
+            XtraMessageBox.Show("İletişim bilgileri başarılı bir şekilde güncellendi.");
+        }
+
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
