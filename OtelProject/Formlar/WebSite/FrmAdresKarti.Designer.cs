@@ -41,15 +41,15 @@
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
             this.TxtAdSoyad = new DevExpress.XtraEditors.GroupControl();
-            this.TxtMesaj = new DevExpress.XtraEditors.MemoEdit();
+            this.TxtAciklama = new DevExpress.XtraEditors.MemoEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl6 = new DevExpress.XtraEditors.GroupControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.TxtAdres = new DevExpress.XtraEditors.LabelControl();
+            this.TxtAdres = new DevExpress.XtraEditors.MemoEdit();
             this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
-            this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKoordinat.Properties)).BeginInit();
@@ -60,14 +60,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad)).BeginInit();
             this.TxtAdSoyad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMesaj.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).BeginInit();
             this.groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit4
@@ -193,12 +193,12 @@
             this.TxtAdSoyad.TabIndex = 47;
             this.TxtAdSoyad.Text = "groupControl1";
             // 
-            // TxtMesaj
+            // TxtAciklama
             // 
-            this.TxtMesaj.Location = new System.Drawing.Point(116, 5);
-            this.TxtMesaj.Name = "TxtMesaj";
-            this.TxtMesaj.Size = new System.Drawing.Size(331, 179);
-            this.TxtMesaj.TabIndex = 4;
+            this.TxtAciklama.Location = new System.Drawing.Point(116, 5);
+            this.TxtAciklama.Name = "TxtAciklama";
+            this.TxtAciklama.Size = new System.Drawing.Size(331, 179);
+            this.TxtAciklama.TabIndex = 4;
             // 
             // labelControl13
             // 
@@ -223,7 +223,7 @@
             // 
             // groupControl6
             // 
-            this.groupControl6.Controls.Add(this.TxtMesaj);
+            this.groupControl6.Controls.Add(this.TxtAciklama);
             this.groupControl6.Controls.Add(this.labelControl13);
             this.groupControl6.Controls.Add(this.pictureEdit7);
             this.groupControl6.Location = new System.Drawing.Point(11, 237);
@@ -235,7 +235,7 @@
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.memoEdit1);
+            this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.TxtAdres);
             this.groupControl1.Controls.Add(this.pictureEdit6);
             this.groupControl1.Location = new System.Drawing.Point(12, 132);
@@ -247,11 +247,10 @@
             // 
             // TxtAdres
             // 
-            this.TxtAdres.Location = new System.Drawing.Point(41, 12);
+            this.TxtAdres.Location = new System.Drawing.Point(115, 11);
             this.TxtAdres.Name = "TxtAdres";
-            this.TxtAdres.Size = new System.Drawing.Size(28, 13);
-            this.TxtAdres.TabIndex = 28;
-            this.TxtAdres.Text = "Adres";
+            this.TxtAdres.Size = new System.Drawing.Size(331, 66);
+            this.TxtAdres.TabIndex = 29;
             // 
             // pictureEdit6
             // 
@@ -266,13 +265,6 @@
             this.pictureEdit6.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit6.TabIndex = 27;
             // 
-            // memoEdit1
-            // 
-            this.memoEdit1.Location = new System.Drawing.Point(115, 11);
-            this.memoEdit1.Name = "memoEdit1";
-            this.memoEdit1.Size = new System.Drawing.Size(331, 66);
-            this.memoEdit1.TabIndex = 29;
-            // 
             // BtnGuncelle
             // 
             this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
@@ -282,7 +274,15 @@
             this.BtnGuncelle.TabIndex = 53;
             this.BtnGuncelle.Text = "Güncelle";
             // 
-            // FrmiletisimKarti
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(41, 16);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(28, 13);
+            this.labelControl2.TabIndex = 30;
+            this.labelControl2.Text = "Adres";
+            // 
+            // FrmAdresKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -295,9 +295,10 @@
             this.Controls.Add(this.groupControl6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmiletisimKarti";
+            this.Name = "FrmAdresKarti";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İletişim Kartı";
+            this.Load += new System.EventHandler(this.FrmAdresKarti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKoordinat.Properties)).EndInit();
@@ -310,7 +311,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtAdSoyad)).EndInit();
             this.TxtAdSoyad.ResumeLayout(false);
             this.TxtAdSoyad.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtMesaj.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAciklama.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl6)).EndInit();
             this.groupControl6.ResumeLayout(false);
@@ -318,8 +319,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAdres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,14 +338,14 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private DevExpress.XtraEditors.SimpleButton BtnVazgec;
         private DevExpress.XtraEditors.GroupControl TxtAdSoyad;
-        private DevExpress.XtraEditors.MemoEdit TxtMesaj;
+        private DevExpress.XtraEditors.MemoEdit TxtAciklama;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.PictureEdit pictureEdit7;
         private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.LabelControl TxtAdres;
         private DevExpress.XtraEditors.PictureEdit pictureEdit6;
-        private DevExpress.XtraEditors.MemoEdit memoEdit1;
+        private DevExpress.XtraEditors.MemoEdit TxtAdres;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
     }
 }
