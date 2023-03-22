@@ -1,4 +1,5 @@
-﻿using OtelProject.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
 using OtelProject.Repositories;
 using System;
 using System.Collections.Generic;
@@ -29,8 +30,23 @@ namespace OtelProject.Formlar.WebSite
             TxtAciklama2.Text = hakkimda.Hakkimda2;
             TxtAciklama3.Text = hakkimda.Hakkimda3;
             TxtAciklama4.Text = hakkimda.Hakkimda4;
-            
+        }
 
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            var hakkimda = repo.Find(x => x.ID == 1);
+            hakkimda.Hakkimda1 = TxtAciklama1.Text;
+            hakkimda.Hakkimda2 = TxtAciklama2.Text;
+            hakkimda.Hakkimda3 = TxtAciklama3.Text;
+            hakkimda.Hakkimda4 = TxtAciklama4.Text;
+
+            repo.TUpdate(hakkimda);
+            XtraMessageBox.Show("Hakkımızda kartı bilgileri başarılı bir şekilde güncellendi.");
         }
     }
 }

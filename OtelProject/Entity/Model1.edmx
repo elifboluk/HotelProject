@@ -72,8 +72,6 @@
           <Property Name="Departman" Type="int" />
           <Property Name="Durum" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'DbOtel.dbo.TblHakkimda' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="TblHakkimda">
           <Key>
             <PropertyRef Name="ID" />
@@ -564,6 +562,7 @@ warning 6002: The table/view 'DbOtel.dbo.TblHakkimda' does not have a primary ke
           <EntitySet Name="TblDurum" EntityType="Self.TblDurum" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblEkibimiz" EntityType="Self.TblEkibimiz" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblGorev" EntityType="Self.TblGorev" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbliletisim" EntityType="Self.Tbliletisim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblKasa" EntityType="Self.TblKasa" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblKur" EntityType="Self.TblKur" Schema="dbo" store:Type="Tables" />
@@ -580,15 +579,6 @@ warning 6002: The table/view 'DbOtel.dbo.TblHakkimda' does not have a primary ke
           <EntitySet Name="TblUrunGrup" EntityType="Self.TblUrunGrup" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblUrunHareket" EntityType="Self.TblUrunHareket" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblYeniKayit" EntityType="Self.TblYeniKayit" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="TblHakkimda" EntityType="Self.TblHakkimda" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [TblHakkimda].[ID] AS [ID], 
-    [TblHakkimda].[Hakkimda1] AS [Hakkimda1], 
-    [TblHakkimda].[Hakkimda2] AS [Hakkimda2], 
-    [TblHakkimda].[Hakkimda3] AS [Hakkimda3], 
-    [TblHakkimda].[Hakkimda4] AS [Hakkimda4]
-    FROM [dbo].[TblHakkimda] AS [TblHakkimda]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_ilceler_iller" Association="Self.FK_ilceler_iller">
             <End Role="iller" EntitySet="iller" />
             <End Role="ilceler" EntitySet="ilceler" />
