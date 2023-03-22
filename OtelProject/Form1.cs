@@ -273,5 +273,12 @@ namespace OtelProject
             Formlar.WebSite.FrmHakkimizda fr = new Formlar.WebSite.FrmHakkimizda();
             fr.Show();
         }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.AnaForm.FrmAnaForm fr = new Formlar.AnaForm.FrmAnaForm();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
