@@ -267,5 +267,11 @@ namespace OtelProject
             Formlar.WebSite.FrmAdresKarti fr = new Formlar.WebSite.FrmAdresKarti();            
             fr.Show();
         }
+
+        private void BtnHakkimdaKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmHakkimizda fr = new Formlar.WebSite.FrmHakkimizda();
+            fr.Show();
+        }
     }
 }

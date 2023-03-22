@@ -73,6 +73,7 @@
             this.BtnGidenMesajlar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnYeniMesaj = new DevExpress.XtraBars.BarButtonItem();
             this.Btniletisim = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnAdresKarti = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -94,10 +95,11 @@
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.BtnAdresKarti = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.BtnHakkimdaKarti = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -150,9 +152,10 @@
             this.BtnGidenMesajlar,
             this.BtnYeniMesaj,
             this.Btniletisim,
-            this.BtnAdresKarti});
+            this.BtnAdresKarti,
+            this.BtnHakkimdaKarti});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 44;
+            this.ribbonControl1.MaxItemId = 45;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -538,6 +541,15 @@
             this.Btniletisim.Name = "Btniletisim";
             this.Btniletisim.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btniletisim_ItemClick);
             // 
+            // BtnAdresKarti
+            // 
+            this.BtnAdresKarti.Caption = "Adres Kartı";
+            this.BtnAdresKarti.Id = 43;
+            this.BtnAdresKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdresKarti.ImageOptions.Image")));
+            this.BtnAdresKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnAdresKarti.ImageOptions.LargeImage")));
+            this.BtnAdresKarti.Name = "BtnAdresKarti";
+            this.BtnAdresKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAdresKarti_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -672,7 +684,8 @@
             this.ribbonPageGroup11,
             this.ribbonPageGroup12,
             this.ribbonPageGroup13,
-            this.ribbonPageGroup14});
+            this.ribbonPageGroup14,
+            this.ribbonPageGroup15});
             this.ribbonPage8.Name = "ribbonPage8";
             this.ribbonPage8.Text = "Web Site";
             // 
@@ -694,6 +707,11 @@
             this.ribbonPageGroup13.ItemLinks.Add(this.Btniletisim);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.BtnAdresKarti);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
@@ -706,19 +724,19 @@
             this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
             this.barButtonItem3.Name = "barButtonItem3";
             // 
-            // ribbonPageGroup14
+            // ribbonPageGroup15
             // 
-            this.ribbonPageGroup14.ItemLinks.Add(this.BtnAdresKarti);
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            this.ribbonPageGroup15.ItemLinks.Add(this.BtnHakkimdaKarti);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             // 
-            // BtnAdresKarti
+            // BtnHakkimdaKarti
             // 
-            this.BtnAdresKarti.Caption = "Adres Kartı";
-            this.BtnAdresKarti.Id = 43;
-            this.BtnAdresKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.BtnAdresKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.BtnAdresKarti.Name = "BtnAdresKarti";
-            this.BtnAdresKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnAdresKarti_ItemClick);
+            this.BtnHakkimdaKarti.Caption = "Hakkımda Kartı";
+            this.BtnHakkimdaKarti.Id = 44;
+            this.BtnHakkimdaKarti.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
+            this.BtnHakkimdaKarti.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+            this.BtnHakkimdaKarti.Name = "BtnHakkimdaKarti";
+            this.BtnHakkimdaKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnHakkimdaKarti_ItemClick);
             // 
             // Form1
             // 
@@ -809,6 +827,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
         private DevExpress.XtraBars.BarButtonItem BtnAdresKarti;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
+        private DevExpress.XtraBars.BarButtonItem BtnHakkimdaKarti;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
     }
 }
 

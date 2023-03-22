@@ -367,6 +367,12 @@
     <Compile Include="Formlar\WebSite\FrmAdresKarti.Designer.cs">
       <DependentUpon>FrmAdresKarti.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\WebSite\FrmHakkimizda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\WebSite\FrmHakkimizda.Designer.cs">
+      <DependentUpon>FrmHakkimizda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\WebSite\FrmMesajKarti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -496,6 +502,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\WebSite\FrmAdresKarti.resx">
       <DependentUpon>FrmAdresKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\WebSite\FrmHakkimizda.resx">
+      <DependentUpon>FrmHakkimizda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\WebSite\FrmMesajKarti.resx">
       <DependentUpon>FrmMesajKarti.cs</DependentUpon>
