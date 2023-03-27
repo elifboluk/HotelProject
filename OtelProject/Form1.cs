@@ -280,5 +280,12 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnGrafik1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Grafikler.FrmGrafik1 fr = new Formlar.Grafikler.FrmGrafik1();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
