@@ -44,6 +44,13 @@ namespace OtelProject.Formlar.AnaForm
                                            x.Durum
                                        }).Where(y=>y.Durum==3007).ToList();
 
+            // Ürün Stok Listesi
+            gridControl1.DataSource = (from x in db.TblUrun
+                                       select new
+                                       {
+                                           x.UrunAd,
+                                           x.Toplam
+                                       }).ToList();
         }
     }
 }
