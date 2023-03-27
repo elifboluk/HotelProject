@@ -9,6 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+Create Procedure OdaDurum
+As
+Select DurumAd, Count(*) As 'Adet' From TblOda
+inner join TblDurum
+On TblDurum.DurumID=TblOda.Durum
+Group By DurumAd
+*/
+
 namespace OtelProject.Formlar.AnaForm
 {
     public partial class FrmAnaForm : Form
