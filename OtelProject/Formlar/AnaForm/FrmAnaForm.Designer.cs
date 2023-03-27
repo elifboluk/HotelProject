@@ -119,7 +119,7 @@
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Location = new System.Drawing.Point(2, 23);
             this.chartControl1.Name = "chartControl1";
-            series1.Name = "Series 1";
+            series1.Name = "Urun-Stok";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
             this.chartControl1.Size = new System.Drawing.Size(346, 165);

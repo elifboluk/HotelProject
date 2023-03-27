@@ -51,6 +51,13 @@ namespace OtelProject.Formlar.AnaForm
                                            x.UrunAd,
                                            x.Toplam
                                        }).ToList();
+
+            // Ürün-Stok Grafiği
+            var urunler = db.TblUrun.ToList();
+            foreach(var x in urunler)
+            {
+                chartControl1.Series["Urun-Stok"].Points.AddPoint(x.UrunAd, double.Parse(x.Toplam.ToString())); // Ürün adı - Değeri
+            }
         }
     }
 }
