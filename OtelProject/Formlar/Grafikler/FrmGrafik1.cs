@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace OtelProject.Formlar.Grafikler
         public FrmGrafik1()
         {
             InitializeComponent();
+        }
+        DbOtelEntities db = new DbOtelEntities();
+
+        private void FrmGrafik1_Load(object sender, EventArgs e)
+        {
+            gridControl1.DataSource = db.OdaDurum(); // Stored Procedure
         }
     }
 }

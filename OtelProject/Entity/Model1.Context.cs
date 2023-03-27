@@ -12,6 +12,8 @@ namespace OtelProject.Entity
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbOtelEntities : DbContext
     {
@@ -50,5 +52,10 @@ namespace OtelProject.Entity
         public virtual DbSet<Tbliletisim> Tbliletisim { get; set; }
         public virtual DbSet<TblMesaj> TblMesaj { get; set; }
         public virtual DbSet<TblHakkimda> TblHakkimda { get; set; }
+    
+        public virtual ObjectResult<OdaDurum_Result> OdaDurum()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<OdaDurum_Result>("OdaDurum");
+        }
     }
 }
