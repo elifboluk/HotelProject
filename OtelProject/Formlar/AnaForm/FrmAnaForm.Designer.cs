@@ -139,7 +139,7 @@
             this.chartControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl2.Location = new System.Drawing.Point(2, 23);
             this.chartControl2.Name = "chartControl2";
-            series2.Name = "Series 1";
+            series2.Name = "Durumlar";
             series2.View = pieSeriesView1;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
