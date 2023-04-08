@@ -21,7 +21,11 @@ namespace OtelProject.Formlar.Grafikler
 
         private void FrmGrafik1_Load(object sender, EventArgs e)
         {
-            gridControl1.DataSource = db.OdaDurum(); // Stored Procedure
+            var urunler = db.TblUrun.ToList();
+            foreach (var x in urunler)
+            {
+                chartControl1.Series["Urun-Stok"].Points.AddPoint(x.UrunAd, double.Parse(x.Toplam.ToString())); // Ürün adı - Değeri
+            }
         }
     }
 }
