@@ -219,6 +219,12 @@
     <Compile Include="Formlar\Grafikler\FrmGrafik1.Designer.cs">
       <DependentUpon>FrmGrafik1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Grafikler\FrmGrafik2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Grafikler\FrmGrafik2.Designer.cs">
+      <DependentUpon>FrmGrafik2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Misafir\FrmMisafirKarti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -443,6 +449,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Grafikler\FrmGrafik1.resx">
       <DependentUpon>FrmGrafik1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Grafikler\FrmGrafik2.resx">
+      <DependentUpon>FrmGrafik2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Misafir\FrmMisafirKarti.resx">
       <DependentUpon>FrmMisafirKarti.cs</DependentUpon>
