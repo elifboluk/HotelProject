@@ -283,6 +283,13 @@ namespace OtelProject
 
         private void BtnGrafik1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            Formlar.Grafikler.FrmGrafik2 fr = new Formlar.Grafikler.FrmGrafik2();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnGrafik2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
             Formlar.Grafikler.FrmGrafik1 fr = new Formlar.Grafikler.FrmGrafik1();
             fr.MdiParent = this;
             fr.Show();

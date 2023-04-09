@@ -76,7 +76,7 @@
             this.BtnAdresKarti = new DevExpress.XtraBars.BarButtonItem();
             this.BtnHakkimdaKarti = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGrafik2 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnGrafik1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.BtnAnaForm = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -160,7 +160,7 @@
             this.BtnAdresKarti,
             this.BtnHakkimdaKarti,
             this.barButtonItem4,
-            this.barButtonItem5,
+            this.BtnGrafik2,
             this.BtnGrafik1});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.MaxItemId = 48;
@@ -577,20 +577,21 @@
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
-            // barButtonItem5
+            // BtnGrafik2
             // 
-            this.barButtonItem5.Caption = "Ürün-Stok Grafiği";
-            this.barButtonItem5.Id = 46;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.BtnGrafik2.Caption = "Ürün-Stok Grafiği";
+            this.BtnGrafik2.Id = 46;
+            this.BtnGrafik2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.BtnGrafik2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.BtnGrafik2.Name = "BtnGrafik2";
+            this.BtnGrafik2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGrafik2_ItemClick);
             // 
             // BtnGrafik1
             // 
             this.BtnGrafik1.Caption = "Oda Doluluk Grafiği";
             this.BtnGrafik1.Id = 47;
-            this.BtnGrafik1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.BtnGrafik1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.BtnGrafik1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGrafik1.ImageOptions.Image")));
+            this.BtnGrafik1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGrafik1.ImageOptions.LargeImage")));
             this.BtnGrafik1.Name = "BtnGrafik1";
             this.BtnGrafik1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGrafik1_ItemClick);
             // 
@@ -731,7 +732,7 @@
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnGrafik2);
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnGrafik1);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
@@ -878,7 +879,7 @@
         private DevExpress.XtraBars.BarButtonItem BtnHakkimdaKarti;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem BtnGrafik2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage9;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.BarButtonItem BtnGrafik1;
