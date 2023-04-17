@@ -447,6 +447,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Admin\FrmSifreislemleri.resx">
+      <DependentUpon>FrmSifreislemleri.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\AnaForm\FrmAnaForm.resx">
       <DependentUpon>FrmAnaForm.cs</DependentUpon>
     </EmbeddedResource>
