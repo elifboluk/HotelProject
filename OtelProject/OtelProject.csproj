@@ -189,6 +189,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Admin\FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmSifreislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Admin\FrmSifreislemleri.Designer.cs">
+      <DependentUpon>FrmSifreislemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\AnaForm\FrmAnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
