@@ -294,5 +294,11 @@ namespace OtelProject
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnSifre_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Admin.FrmSifreislemleri fr = new Formlar.Admin.FrmSifreislemleri();
+            fr.Show();
+        }
     }
 }

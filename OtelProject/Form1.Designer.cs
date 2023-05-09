@@ -470,6 +470,7 @@
             this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
             this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
             this.BtnSifre.Name = "BtnSifre";
+            this.BtnSifre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnSifre_ItemClick);
             // 
             // barButtonItem10
             // 

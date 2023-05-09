@@ -77,19 +77,15 @@
             // 
             this.TxtSifre2.Location = new System.Drawing.Point(123, 118);
             this.TxtSifre2.Name = "TxtSifre2";
-            this.TxtSifre2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtSifre2.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
             this.TxtSifre2.Size = new System.Drawing.Size(253, 20);
-            this.TxtSifre2.TabIndex = 19;
+            this.TxtSifre2.TabIndex = 3;
             // 
             // TxtSifre1
             // 
             this.TxtSifre1.Location = new System.Drawing.Point(123, 68);
             this.TxtSifre1.Name = "TxtSifre1";
-            this.TxtSifre1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtSifre1.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
             this.TxtSifre1.Size = new System.Drawing.Size(253, 20);
-            this.TxtSifre1.TabIndex = 22;
+            this.TxtSifre1.TabIndex = 2;
             // 
             // labelControl2
             // 
@@ -137,10 +133,8 @@
             // 
             this.TxtKullanici.Location = new System.Drawing.Point(123, 18);
             this.TxtKullanici.Name = "TxtKullanici";
-            this.TxtKullanici.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtKullanici.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
             this.TxtKullanici.Size = new System.Drawing.Size(253, 20);
-            this.TxtKullanici.TabIndex = 19;
+            this.TxtKullanici.TabIndex = 1;
             // 
             // labelControl9
             // 
@@ -181,7 +175,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(142, 6);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(103, 30);
-            this.BtnGuncelle.TabIndex = 2;
+            this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "Güncelle";
             // 
             // BtnKaydet
@@ -190,7 +184,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(273, 6);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(103, 30);
-            this.BtnKaydet.TabIndex = 1;
+            this.BtnKaydet.TabIndex = 6;
             this.BtnKaydet.Text = "Kaydet";
             // 
             // BtnVazgec
@@ -199,7 +193,7 @@
             this.BtnVazgec.Location = new System.Drawing.Point(11, 6);
             this.BtnVazgec.Name = "BtnVazgec";
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
-            this.BtnVazgec.TabIndex = 0;
+            this.BtnVazgec.TabIndex = 4;
             this.BtnVazgec.Text = "Vazgeç";
             this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
@@ -210,7 +204,10 @@
             this.ClientSize = new System.Drawing.Size(415, 226);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmSifreislemleri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Şifre İşlemleri";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
