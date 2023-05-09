@@ -63,7 +63,7 @@
             this.BtnGoogle = new DevExpress.XtraBars.BarButtonItem();
             this.BtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.BtnExcel = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnSifre = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
@@ -147,7 +147,7 @@
             this.BtnGoogle,
             this.BtnWord,
             this.BtnExcel,
-            this.barButtonItem9,
+            this.BtnSifre,
             this.barButtonItem10,
             this.barButtonItem11,
             this.BtnHesapMakinesi,
@@ -463,13 +463,13 @@
             this.BtnExcel.Name = "BtnExcel";
             this.BtnExcel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnExcel_ItemClick);
             // 
-            // barButtonItem9
+            // BtnSifre
             // 
-            this.barButtonItem9.Caption = "Şifre İşlemleri";
-            this.barButtonItem9.Id = 33;
-            this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.barButtonItem9.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.BtnSifre.Caption = "Şifre İşlemleri";
+            this.BtnSifre.Id = 33;
+            this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
+            this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
+            this.BtnSifre.Name = "BtnSifre";
             // 
             // barButtonItem10
             // 
@@ -581,8 +581,8 @@
             // 
             this.BtnGrafik2.Caption = "Ürün-Stok Grafiği";
             this.BtnGrafik2.Id = 46;
-            this.BtnGrafik2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.BtnGrafik2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.BtnGrafik2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGrafik2.ImageOptions.Image")));
+            this.BtnGrafik2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGrafik2.ImageOptions.LargeImage")));
             this.BtnGrafik2.Name = "BtnGrafik2";
             this.BtnGrafik2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGrafik2_ItemClick);
             // 
@@ -718,7 +718,7 @@
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnHesapMakinesi);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnWord);
             this.ribbonPageGroup10.ItemLinks.Add(this.BtnExcel);
-            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup10.ItemLinks.Add(this.BtnSifre);
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
@@ -858,7 +858,7 @@
         private DevExpress.XtraBars.BarButtonItem BtnGoogle;
         private DevExpress.XtraBars.BarButtonItem BtnWord;
         private DevExpress.XtraBars.BarButtonItem BtnExcel;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
+        private DevExpress.XtraBars.BarButtonItem BtnSifre;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;

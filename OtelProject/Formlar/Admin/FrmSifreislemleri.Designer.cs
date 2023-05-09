@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSifreislemleri));
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSifre2 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSifre1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.TxtTelefon = new DevExpress.XtraEditors.TextEdit();
+            this.TxtKullanici = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -45,11 +45,11 @@
             this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
@@ -57,13 +57,13 @@
             // 
             // groupControl4
             // 
-            this.groupControl4.Controls.Add(this.textEdit2);
-            this.groupControl4.Controls.Add(this.textEdit1);
+            this.groupControl4.Controls.Add(this.TxtSifre2);
+            this.groupControl4.Controls.Add(this.TxtSifre1);
             this.groupControl4.Controls.Add(this.labelControl2);
             this.groupControl4.Controls.Add(this.pictureEdit2);
             this.groupControl4.Controls.Add(this.labelControl1);
             this.groupControl4.Controls.Add(this.pictureEdit1);
-            this.groupControl4.Controls.Add(this.TxtTelefon);
+            this.groupControl4.Controls.Add(this.TxtKullanici);
             this.groupControl4.Controls.Add(this.labelControl9);
             this.groupControl4.Controls.Add(this.pictureEdit9);
             this.groupControl4.Location = new System.Drawing.Point(12, 12);
@@ -73,23 +73,23 @@
             this.groupControl4.TabIndex = 2;
             this.groupControl4.Text = "groupControl4";
             // 
-            // textEdit2
+            // TxtSifre2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(123, 118);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.textEdit2.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
-            this.textEdit2.Size = new System.Drawing.Size(253, 20);
-            this.textEdit2.TabIndex = 19;
+            this.TxtSifre2.Location = new System.Drawing.Point(123, 118);
+            this.TxtSifre2.Name = "TxtSifre2";
+            this.TxtSifre2.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TxtSifre2.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
+            this.TxtSifre2.Size = new System.Drawing.Size(253, 20);
+            this.TxtSifre2.TabIndex = 19;
             // 
-            // textEdit1
+            // TxtSifre1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(123, 68);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.textEdit1.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
-            this.textEdit1.Size = new System.Drawing.Size(253, 20);
-            this.textEdit1.TabIndex = 22;
+            this.TxtSifre1.Location = new System.Drawing.Point(123, 68);
+            this.TxtSifre1.Name = "TxtSifre1";
+            this.TxtSifre1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TxtSifre1.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
+            this.TxtSifre1.Size = new System.Drawing.Size(253, 20);
+            this.TxtSifre1.TabIndex = 22;
             // 
             // labelControl2
             // 
@@ -133,14 +133,14 @@
             this.pictureEdit1.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit1.TabIndex = 23;
             // 
-            // TxtTelefon
+            // TxtKullanici
             // 
-            this.TxtTelefon.Location = new System.Drawing.Point(123, 18);
-            this.TxtTelefon.Name = "TxtTelefon";
-            this.TxtTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-            this.TxtTelefon.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
-            this.TxtTelefon.Size = new System.Drawing.Size(253, 20);
-            this.TxtTelefon.TabIndex = 19;
+            this.TxtKullanici.Location = new System.Drawing.Point(123, 18);
+            this.TxtKullanici.Name = "TxtKullanici";
+            this.TxtKullanici.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+            this.TxtKullanici.Properties.MaskSettings.Set("mask", "(\\d\\d\\d) \\d\\d\\d-\\d\\d\\d\\d");
+            this.TxtKullanici.Size = new System.Drawing.Size(253, 20);
+            this.TxtKullanici.TabIndex = 19;
             // 
             // labelControl9
             // 
@@ -168,7 +168,7 @@
             this.groupControl3.Controls.Add(this.BtnGuncelle);
             this.groupControl3.Controls.Add(this.BtnKaydet);
             this.groupControl3.Controls.Add(this.BtnVazgec);
-            this.groupControl3.Location = new System.Drawing.Point(12, 305);
+            this.groupControl3.Location = new System.Drawing.Point(12, 174);
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.ShowCaption = false;
             this.groupControl3.Size = new System.Drawing.Size(392, 41);
@@ -201,12 +201,13 @@
             this.BtnVazgec.Size = new System.Drawing.Size(103, 30);
             this.BtnVazgec.TabIndex = 0;
             this.BtnVazgec.Text = "Vazgeç";
+            this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
             // 
             // FrmSifreislemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 358);
+            this.ClientSize = new System.Drawing.Size(415, 226);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl4);
             this.Name = "FrmSifreislemleri";
@@ -214,11 +215,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtTelefon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
@@ -229,17 +230,17 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private DevExpress.XtraEditors.TextEdit TxtTelefon;
+        private DevExpress.XtraEditors.TextEdit TxtKullanici;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit TxtSifre2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
         private DevExpress.XtraEditors.SimpleButton BtnVazgec;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit TxtSifre1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }

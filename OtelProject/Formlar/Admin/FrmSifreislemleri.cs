@@ -16,5 +16,10 @@ namespace OtelProject.Formlar.Admin
         {
             InitializeComponent();
         }
+
+        private void BtnVazgec_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
