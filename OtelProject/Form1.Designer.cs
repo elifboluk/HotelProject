@@ -467,8 +467,8 @@
             // 
             this.BtnSifre.Caption = "Şifre İşlemleri";
             this.BtnSifre.Id = 33;
-            this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
-            this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.LargeImage")));
+            this.BtnSifre.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSifre.ImageOptions.Image")));
+            this.BtnSifre.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnSifre.ImageOptions.LargeImage")));
             this.BtnSifre.Name = "BtnSifre";
             this.BtnSifre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnSifre_ItemClick);
             // 
@@ -800,6 +800,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Otel Projesi";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

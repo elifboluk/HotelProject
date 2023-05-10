@@ -300,5 +300,12 @@ namespace OtelProject
             Formlar.Admin.FrmSifreislemleri fr = new Formlar.Admin.FrmSifreislemleri();
             fr.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Formlar.AnaForm.FrmAnaForm fr = new Formlar.AnaForm.FrmAnaForm();
+            fr.MdiParent = this;
+            fr.Show();
+        }
     }
 }
