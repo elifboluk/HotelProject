@@ -16,5 +16,15 @@ namespace OtelProject.Formlar.Admin
         {
             InitializeComponent();
         }
+
+        private void BtnGiris_Click(object sender, EventArgs e)
+        {
+            if (TxtKullanici.Text == "1")
+            {
+                Form1 frm = new Form1();
+                frm.Show();
+                this.Hide();
+            }
+        }
     }
 }

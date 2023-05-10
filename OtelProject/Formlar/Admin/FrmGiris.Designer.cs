@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGiris));
-            this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnGiris = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.TxtSifre1 = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSifre = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.TxtKullanici = new DevExpress.XtraEditors.TextEdit();
@@ -39,47 +39,49 @@
             this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
             this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // BtnKaydet
+            // BtnGiris
             // 
-            this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-            this.BtnKaydet.Location = new System.Drawing.Point(273, 106);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(103, 30);
-            this.BtnKaydet.TabIndex = 6;
-            this.BtnKaydet.Text = "Kaydet";
+            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
+            this.BtnGiris.Location = new System.Drawing.Point(212, 115);
+            this.BtnGiris.Name = "BtnGiris";
+            this.BtnGiris.Size = new System.Drawing.Size(103, 30);
+            this.BtnGiris.TabIndex = 6;
+            this.BtnGiris.Text = "Giriş Yap";
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
             // groupControl4
             // 
-            this.groupControl4.Controls.Add(this.BtnKaydet);
-            this.groupControl4.Controls.Add(this.TxtSifre1);
+            this.groupControl4.Controls.Add(this.BtnGiris);
+            this.groupControl4.Controls.Add(this.TxtSifre);
             this.groupControl4.Controls.Add(this.labelControl1);
             this.groupControl4.Controls.Add(this.pictureEdit1);
             this.groupControl4.Controls.Add(this.TxtKullanici);
             this.groupControl4.Controls.Add(this.labelControl9);
             this.groupControl4.Controls.Add(this.pictureEdit9);
-            this.groupControl4.Location = new System.Drawing.Point(12, 12);
+            this.groupControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl4.Location = new System.Drawing.Point(0, 0);
             this.groupControl4.Name = "groupControl4";
             this.groupControl4.ShowCaption = false;
-            this.groupControl4.Size = new System.Drawing.Size(392, 151);
+            this.groupControl4.Size = new System.Drawing.Size(342, 175);
             this.groupControl4.TabIndex = 9;
             this.groupControl4.Text = "groupControl4";
             // 
-            // TxtSifre1
+            // TxtSifre
             // 
-            this.TxtSifre1.Location = new System.Drawing.Point(123, 68);
-            this.TxtSifre1.Name = "TxtSifre1";
-            this.TxtSifre1.Size = new System.Drawing.Size(253, 20);
-            this.TxtSifre1.TabIndex = 2;
+            this.TxtSifre.Location = new System.Drawing.Point(137, 78);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Size = new System.Drawing.Size(178, 20);
+            this.TxtSifre.TabIndex = 2;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(37, 71);
+            this.labelControl1.Location = new System.Drawing.Point(51, 81);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(35, 13);
             this.labelControl1.TabIndex = 24;
@@ -88,7 +90,7 @@
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(11, 64);
+            this.pictureEdit1.Location = new System.Drawing.Point(25, 74);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
@@ -100,14 +102,14 @@
             // 
             // TxtKullanici
             // 
-            this.TxtKullanici.Location = new System.Drawing.Point(123, 18);
+            this.TxtKullanici.Location = new System.Drawing.Point(137, 28);
             this.TxtKullanici.Name = "TxtKullanici";
-            this.TxtKullanici.Size = new System.Drawing.Size(253, 20);
+            this.TxtKullanici.Size = new System.Drawing.Size(178, 20);
             this.TxtKullanici.TabIndex = 1;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(37, 21);
+            this.labelControl9.Location = new System.Drawing.Point(51, 31);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(68, 13);
             this.labelControl9.TabIndex = 21;
@@ -116,7 +118,7 @@
             // pictureEdit9
             // 
             this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
-            this.pictureEdit9.Location = new System.Drawing.Point(11, 14);
+            this.pictureEdit9.Location = new System.Drawing.Point(25, 24);
             this.pictureEdit9.Name = "pictureEdit9";
             this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
@@ -130,14 +132,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 175);
+            this.ClientSize = new System.Drawing.Size(342, 175);
             this.Controls.Add(this.groupControl4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmGiris";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmGiris";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtKullanici.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
@@ -146,9 +150,9 @@
         }
 
         #endregion
-        private DevExpress.XtraEditors.SimpleButton BtnKaydet;
+        private DevExpress.XtraEditors.SimpleButton BtnGiris;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private DevExpress.XtraEditors.TextEdit TxtSifre1;
+        private DevExpress.XtraEditors.TextEdit TxtSifre;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.TextEdit TxtKullanici;
