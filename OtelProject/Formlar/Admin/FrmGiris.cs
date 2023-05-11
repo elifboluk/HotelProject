@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using OtelProject.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,14 +18,20 @@ namespace OtelProject.Formlar.Admin
         {
             InitializeComponent();
         }
+        DbOtelEntities db = new DbOtelEntities();
 
         private void BtnGiris_Click(object sender, EventArgs e)
         {
-            if (TxtKullanici.Text == "1")
+            var kullanici = db.TblAdmin.Where(x => x.Kullanici == TxtKullanici.Text && x.Sifre == TxtSifre.Text).FirstOrDefault();
+            if (kullanici != null)
             {
                 Form1 frm = new Form1();
                 frm.Show();
                 this.Hide();
+            }
+            else
+            {
+                XtraMessageBox.Show("Yanlış kullanıcı adı veya şifre girdiniz.","Hata",MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
     }
