@@ -304,7 +304,7 @@ namespace OtelProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Thread.Sleep(5000); // Splash Screen 5 sn
+            // Thread.Sleep(5000); // Splash Screen 5 sn
             Formlar.AnaForm.FrmAnaForm fr = new Formlar.AnaForm.FrmAnaForm();
             fr.MdiParent = this;
             fr.Show();

@@ -52,6 +52,7 @@ namespace OtelProject.Formlar.AnaForm
                                            x.TblMisafir.AdSoyad,
                                            x.Durum
                                        }).Where(y=>y.Durum==3007).ToList();
+            gridView2.Columns["Durum"].Visible = false;
 
             // Ürün Stok Listesi
             gridControl1.DataSource = (from x in db.TblUrun
