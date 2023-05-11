@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGiris));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::OtelProject.Formlar.Admin.SplashScreen1), true, true);
             this.BtnGiris = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.TxtSifre = new DevExpress.XtraEditors.TextEdit();
@@ -130,6 +131,10 @@
             this.pictureEdit9.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit9.TabIndex = 20;
             // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
+            // 
             // FrmGiris
             // 
             this.AcceptButton = this.BtnGiris;
@@ -141,6 +146,7 @@
             this.Name = "FrmGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmGiris";
+            this.Load += new System.EventHandler(this.FrmGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();

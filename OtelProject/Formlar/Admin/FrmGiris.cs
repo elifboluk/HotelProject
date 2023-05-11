@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -33,6 +34,11 @@ namespace OtelProject.Formlar.Admin
             {
                 XtraMessageBox.Show("Yanlış kullanıcı adı veya şifre girdiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+        }
+
+        private void FrmGiris_Load(object sender, EventArgs e)
+        {
+            Thread.Sleep(5000); // Splash Screen 5 sn
         }
     }
 }
