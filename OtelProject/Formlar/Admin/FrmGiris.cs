@@ -31,7 +31,7 @@ namespace OtelProject.Formlar.Admin
             }
             else
             {
-                XtraMessageBox.Show("Yanlış kullanıcı adı veya şifre girdiniz.","Hata",MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                XtraMessageBox.Show("Yanlış kullanıcı adı veya şifre girdiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
     }

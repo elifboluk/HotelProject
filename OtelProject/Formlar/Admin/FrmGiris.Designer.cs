@@ -47,7 +47,8 @@
             // 
             // BtnGiris
             // 
-            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
+            this.BtnGiris.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGiris.ImageOptions.Image")));
             this.BtnGiris.Location = new System.Drawing.Point(212, 115);
             this.BtnGiris.Name = "BtnGiris";
             this.BtnGiris.Size = new System.Drawing.Size(103, 30);
@@ -76,6 +77,7 @@
             // 
             this.TxtSifre.Location = new System.Drawing.Point(137, 78);
             this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.Properties.UseSystemPasswordChar = true;
             this.TxtSifre.Size = new System.Drawing.Size(178, 20);
             this.TxtSifre.TabIndex = 2;
             // 
@@ -130,6 +132,7 @@
             // 
             // FrmGiris
             // 
+            this.AcceptButton = this.BtnGiris;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 175);
