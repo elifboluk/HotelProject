@@ -26,31 +26,6 @@ namespace OtelProject.Formlar.Misafir
         string resim1, resim2;
         private void FrmMisafirKarti_Load(object sender, EventArgs e)
         {
-            try
-            {
-                // Güncellenecek kart bilgileri
-                if (id != 0) //Form yüklendiğinde id sıfır değilse aşağıdaki işlemleri yap.
-                {
-                    var misafir = repo.Find(x => x.MisafirID == id);
-                    TxtAdSoyad.Text = misafir.AdSoyad;
-                    TxtTc.Text = misafir.TC;
-                    TxtAdres.Text = misafir.Adres;
-                    TxtTelefon.Text = misafir.Telefon;
-                    TxtMail.Text = misafir.Mail;
-                    TxtAciklama.Text = misafir.Aciklama;
-                    PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
-                    PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
-                    resim1 = misafir.KimlikFoto1;
-                    resim2 = misafir.KimlikFoto2;
-                    lookUpEditSehir.EditValue = misafir.sehir; // Misafir kartına şehir bilgisi geldi.
-                    lookUpEditUlke.EditValue = misafir.Ulke; // Misafir kartına ülke bilgisi geldi.
-                    lookUpEditilce.EditValue = misafir.ilce; // Misafir kartına ilçe bilgisi geldi.
-                }                
-            }
-            catch (Exception)
-            {
-                XtraMessageBox.Show("Bir hata oluştu lütfen sütunları kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-            }
             // Ülke Listesi
             lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
                                                     select new
@@ -66,6 +41,34 @@ namespace OtelProject.Formlar.Misafir
                                                          Id = x.id,
                                                          Şehir = x.sehir
                                                      }).ToList();
+
+            try
+            {
+                // Güncellenecek kart bilgileri
+                if (id != 0) //Form yüklendiğinde id sıfır değilse aşağıdaki işlemleri yap.
+                {
+                    var misafir = repo.Find(x => x.MisafirID == id);
+                    TxtAdSoyad.Text = misafir.AdSoyad;
+                    TxtTc.Text = misafir.TC;
+                    TxtAdres.Text = misafir.Adres;
+                    TxtTelefon.Text = misafir.Telefon;
+                    TxtMail.Text = misafir.Mail;
+                    TxtAciklama.Text = misafir.Aciklama;
+                    lookUpEditSehir.EditValue = misafir.sehir; // Misafir kartına şehir bilgisi geldi.
+                    lookUpEditUlke.EditValue = misafir.Ulke; // Misafir kartına ülke bilgisi geldi.
+                    lookUpEditilce.EditValue = misafir.ilce; // Misafir kartına ilçe bilgisi geldi.
+                    PictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1); // Kimliğin ön kısmındaki fotoğrafı aldık.
+                    PictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2); // Kimliğin arka kısmındaki fotoğrafı aldık.
+                    resim1 = misafir.KimlikFoto1;
+                    resim2 = misafir.KimlikFoto2;
+                    
+                }                
+            }
+            catch (Exception)
+            {
+                XtraMessageBox.Show("Bir hata oluştu lütfen sütunları kontrol edin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            
         }
 
         private void lookUpEditUlke_EditValueChanged(object sender, EventArgs e)
