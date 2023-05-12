@@ -25,7 +25,7 @@ namespace OtelProject.Formlar.Personel
         Repository<TblPersonel> repo = new Repository<TblPersonel>();
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
-            this.Text = id.ToString(); // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
+            // this.Text = id.ToString(); // Formun sol üst köşesine id'yi yazdırsın. Id'nin değeri FrmPersonelListesi.cs'ten çekilerek gelecek.
             if (id != 0) //Form yüklendiğinde id sıfır değilse aşağıdaki işlemleri yap.
             {
                 var personel = repo.Find(x => x.PersonelID == id);
