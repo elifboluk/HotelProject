@@ -196,7 +196,7 @@ namespace OtelProject.Formlar.Rezervasyon
             rezervasyon.Aciklama = TxtAciklama.Text;
 
             repo.TUpdate(rezervasyon);
-            XtraMessageBox.Show("Ürün başarılı bir şekilde güncellendi.");
+            XtraMessageBox.Show("Rezervasyon başarılı bir şekilde güncellendi.");
         }
     }
 }
