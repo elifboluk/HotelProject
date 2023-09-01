@@ -27,6 +27,7 @@ namespace OtelProject.Entity
         public Nullable<int> Kisi1 { get; set; }
         public Nullable<int> Kisi2 { get; set; }
         public Nullable<int> Kisi3 { get; set; }
+        public Nullable<decimal> Toplam { get; set; }
     
         public virtual TblDurum TblDurum { get; set; }
         public virtual TblMisafir TblMisafir { get; set; }
