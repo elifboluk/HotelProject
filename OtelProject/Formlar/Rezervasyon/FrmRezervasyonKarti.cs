@@ -93,6 +93,7 @@ namespace OtelProject.Formlar.Rezervasyon
                 TxtTelefon.Text = rezervasyon.Telefon;
                 lookUpEditDurum.EditValue = rezervasyon.Durum;
                 TxtAciklama.Text = rezervasyon.Aciklama;
+                TxtToplam.Text = rezervasyon.Toplam.ToString();
                 lookUpEditKisi1.EditValue = rezervasyon.Kisi1;
                 lookUpEditKisi2.EditValue = rezervasyon.Kisi2;
                 lookUpEditKisi3.EditValue = rezervasyon.Kisi3;
@@ -144,6 +145,7 @@ namespace OtelProject.Formlar.Rezervasyon
             t.Telefon = TxtTelefon.Text;
             t.Aciklama = TxtAciklama.Text;
             t.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
+            t.Toplam = decimal.Parse(TxtToplam.Text);
             repo.TAdd(t);
             XtraMessageBox.Show("Rezervasyon başarılı bir şekilde oluşturuldu.");
         }
@@ -166,6 +168,7 @@ namespace OtelProject.Formlar.Rezervasyon
             rezervasyon.Oda = int.Parse(lookUpEditOda.EditValue.ToString());
             rezervasyon.Telefon = TxtTelefon.Text;
             rezervasyon.Durum = int.Parse(lookUpEditDurum.EditValue.ToString());
+            rezervasyon.Toplam = decimal.Parse(TxtToplam.Text);s
             if (numericUpDown1.Value == 1)
             {
                 rezervasyon.Misafir = int.Parse(lookUpEditMisafir.EditValue.ToString());
